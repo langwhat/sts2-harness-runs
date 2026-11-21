@@ -31,6 +31,21 @@ Inside each run directory:
 | `instance/initial-observation.json` | The paused game state before Start. |
 | `instance/appdata/` | The game's own saves, run history (`saves/history/*.run`), replay, and Godot log. |
 
+## Recording provenance
+
+Absolute paths in the logs and status files point into the batch directory on
+the original machine. They retain their recorded values to match the SQLite
+archives.
+
+[`run_full.py`](run_full.py) launched the recorded runs and matches the hash in
+the seed normalization amendment. It imports `sts2_knowledge` and references a
+native start template and a `connection.env` file from other local batches.
+Those batch directories and configuration files are outside this repository.
+Credentials were supplied separately through the environment file.
+
+The SQLite archives contain full prompts, model outputs, knowledge document
+bodies, and OpenAI's encrypted reasoning items.
+
 ## Not included
 
 - Game resources staged from the installation (`instance/engine/`).
