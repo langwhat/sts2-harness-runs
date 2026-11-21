@@ -1,0 +1,7 @@
+{
+  "paired-eval.patch": "240ed37512b1d8d6b3587e0031f4b59c8fd2d9a61ec5dfaa5b41616c11998061",
+  "game/SlayTheSpire2.app/Contents/MacOS/mods/sts2agent/sts2agent.dll": "abfced68f861c125e215ee8fef21c0227f545465820956d267726627a75284d0",
+  "protocol.json": "f446cc4106a021628847fa0191f1afb42b52bb4954988dca55dc73a563cf635b",
+  "run_pair.py": "d876bc731bcff3294820b930dbf0ab0a279d2e497434c19b0365e5b12527b8c1",
+  "run_full.py": "9284662b149fda83a0953ba49001cdf40b01901c923b4b81f9633bdce128ac86"
+}

@@ -1,0 +1,1524 @@
+MegaDot v4.5.1.m.14.mono.custom_build - https://godotengine.org
+
+HARNESS_AUDIO_OVERLAY_MOUNTED
+[INFO] [Sentry.NET] Disabled: no DSN configured in project settings
+[INFO] Steam initialization skipped (editor mode). Use --force-steam to enable.
+[INFO] Found release_info.json at: /Users/aaa/Documents/Codex/2026-11-20/STS2-fool-A10-paired-eval/game/SlayTheSpire2.app/Contents/MacOS/../Resources/release_info.json
+[INFO] Registered 24 migrations
+[INFO] Current save versions: PrefsSave v2; ProfileSave v2; SerializableProgress v24; RunHistory v11; SerializableRun v21; SettingsSave v8
+[INFO] Found mod manifest file /Users/aaa/Documents/Codex/2026-11-20/STS2-fool-A10-paired-eval/game/SlayTheSpire2.app/Contents/MacOS/mods/sts2agent/mod_manifest.json
+[INFO] Found mod manifest file /Users/aaa/Documents/Codex/2026-11-20/STS2-fool-A10-paired-eval/game/SlayTheSpire2.app/Contents/MacOS/mods/sts2agent/sts2agent.deps.json
+[INFO] JSON file /Users/aaa/Documents/Codex/2026-11-20/STS2-fool-A10-paired-eval/game/SlayTheSpire2.app/Contents/MacOS/mods/sts2agent/sts2agent.deps.json does not look like a mod manifest; skipping it.
+[INFO] Found mod manifest file /Users/aaa/Documents/Codex/2026-11-20/STS2-fool-A10-paired-eval/game/SlayTheSpire2.app/Contents/MacOS/mods/sts2agent/sts2agent.runtimeconfig.json
+[INFO] JSON file /Users/aaa/Documents/Codex/2026-11-20/STS2-fool-A10-paired-eval/game/SlayTheSpire2.app/Contents/MacOS/mods/sts2agent/sts2agent.runtimeconfig.json does not look like a mod manifest; skipping it.
+[INFO] Mods have been re-sorted because we detected a change or dependency order was broken. New sorting order:
+[INFO]   0: Slay the Spire 2 Agent Harness (sts2agent)
+[WARN] Mod sts2agent does not declare min game version. Assuming that it is supported.
+[INFO] Loading assembly DLL /Users/aaa/Documents/Codex/2026-11-20/STS2-fool-A10-paired-eval/game/SlayTheSpire2.app/Contents/MacOS/mods/sts2agent/sts2agent.dll
+[INFO] Calling initializer method of type Sts2Mod.Bootstrap.ModEntry for sts2agent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[sts2agent] Initializing Slay the Spire 2 agent bridge.
+[sts2agent] Listening on http://127.0.0.1:64267/
+[sts2agent] Graceful headless SIGTERM handling enabled.
+[INFO] Finished mod initialization for 'Slay the Spire 2 Agent Harness' (sts2agent).
+[INFO]  --- RUNNING MODDED! --- Loaded 1 mods (1 total)
+[WARN] Asset not cached: res://scenes/debug/dev_console.tscn
+[WARN] Asset not cached: res://scenes/cards/card.tscn
+[WARN] Asset not cached: res://scenes/cards/holders/grid_card_holder.tscn
+[INFO] AtlasManager: Loaded ui_atlas with 113 sprites
+[INFO] AtlasManager: Loaded compressed_atlas with 56 sprites
+[INFO] Loading locale path=res://localization/eng
+[INFO] Loading locale path=res://localization/zhs
+[INFO] ModelIdSerializationCache initialized. Categories: 21 Entries: 1864 Epochs: 66 Properties: 53 Hash: 1748280997
+[WARN] Tried to read file at user://default/1/leaderboards.save, but there was no such file
+[INFO] Profile-scoped data path initialized: user://default/1/modded/profile1
+[INFO] AtlasManager: Loaded controller_atlas with 112 sprites
+[INFO] [Startup] Time to main menu (Godot ticks): 2072ms
+[INFO] [Startup] Time to main menu: 2,101ms
+[INFO] [Startup] Resource stats (main menu loaded (essential)): StaticMem=0B, VRAM=0B, Objects=8,563, Resources=664, Nodes=1,788, CachedAssets=10
+[INFO] AtlasManager: Loaded epoch_atlas with 66 sprites
+[INFO] AtlasManager: Loaded relic_atlas with 348 sprites
+[INFO] AtlasManager: Loaded relic_outline_atlas with 356 sprites
+[INFO] AtlasManager: Loaded power_atlas with 272 sprites
+[INFO] AtlasManager: Loaded card_atlas with 638 sprites
+[INFO] AtlasManager: Loaded potion_atlas with 67 sprites
+[INFO] AtlasManager: Loaded potion_outline_atlas with 67 sprites
+[INFO] AtlasManager: Loaded stats_screen_atlas with 16 sprites
+[INFO] AtlasManager: Loaded intent_atlas with 310 sprites
+[INFO] AtlasManager: Loaded era_atlas with 27 sprites
+[INFO] Unloading 3 missed cache assets
+[INFO] [Startup] Resource stats (main menu loaded (complete)): StaticMem=0B, VRAM=0B, Objects=8,577, Resources=671, Nodes=1,788, CachedAssets=5
+[WARN] Cannot initialize Steam Input because Steamworks is not initialized. Falling back to standard input.
+[INFO] Wrote 1559 bytes to path=user://default/1/settings.save save_dir=user://default/1
+[INFO] Wrote 2366 bytes to path=user://default/1/settings.save save_dir=user://default/1
+[INFO] Wrote 3351 bytes to path=user://default/1/settings.save save_dir=user://default/1
+[INFO] === Godot OS Debug Information ===
+Timestamp: 11/21/2026 01:03:04
+OS: macOS
+OS Version: 26.5.2
+Distribution Name: macOS
+Device Model: Mac16,10
+Is Debug Build: False
+Is Sandboxed: False
+Executable Path: /Users/aaa/Documents/Codex/2026-11-20/STS2-fool-A10-paired-eval/game/SlayTheSpire2.app/Contents/MacOS/Slay the Spire 2
+Data Directory: /Users/aaa/Documents/Codex/2026-11-20/STS2-fool-A10-paired-eval/holdout/16-control-01/instance/home/Library/Application Support
+User Data Directory: /Users/aaa/Documents/Codex/2026-11-20/STS2-fool-A10-paired-eval/holdout/16-control-01/instance/home/Library/Application Support/STS2-Harness-5cde439ea8524bf3936fab16dbf492cb
+Command Line Args: --force-steam=off
+User Command Line Args: 
+OS Locale: zh_Hans_CN
+OS Language: zh
+Game Locale: zh_Hans_CN
+Is UserFS Persistent: True
+Is Stdout Verbose: False
+Is Low Processor Usage Mode: False
+Architecture: arm64
+Engine Version: 4.5.1-m.14 (custom_build)
+Is Editor: False
+Release Version: v0.113.1
+Release Commit: d09d48e5
+Release Date: 11/14/2026 02:31:11
+Processor Count: 10
+Processor Name: Apple M4
+Main assembly hash: -703185000
+Rendering device name: N/A (headless)
+Screen info (primary 0):
+Video Memory Used: 0.0B
+Memory Info:
+  physical: 16.0GB
+  free: 1.0GB
+  available: 2.1GB
+  stack: 8.0MB
+  Static Memory Usage: 0.0B
+  Static Memory Peak Usage: 0.0B
+Disk Info:
+  Index 0: Name: / Type: Fixed Format: apfs Available: 22.2GB Total Free: 22.2GB Total Size: 228.3GB
+  Index 2: Name: /System/Volumes/VM Type: Fixed Format: apfs Available: 22.2GB Total Free: 22.2GB Total Size: 228.3GB
+  Index 3: Name: /System/Volumes/Preboot Type: Fixed Format: apfs Available: 22.2GB Total Free: 22.2GB Total Size: 228.3GB
+  Index 4: Name: /System/Volumes/Update Type: Fixed Format: apfs Available: 22.2GB Total Free: 22.2GB Total Size: 228.3GB
+  Index 5: Name: /System/Volumes/xarts Type: Fixed Format: apfs Available: 482.7MB Total Free: 482.7MB Total Size: 500.0MB
+  Index 6: Name: /System/Volumes/iSCPreboot Type: Fixed Format: apfs Available: 482.7MB Total Free: 482.7MB Total Size: 500.0MB
+  Index 7: Name: /System/Volumes/Hardware Type: Fixed Format: apfs Available: 482.7MB Total Free: 482.7MB Total Size: 500.0MB
+  Index 8: Name: /System/Volumes/Data Type: Fixed Format: apfs Available: 22.2GB Total Free: 22.2GB Total Size: 228.3GB
+  Index 10: Name: /System/Volumes/Update/SFR/mnt1 Type: Fixed Format: apfs Available: 2.6GB Total Free: 2.6GB Total Size: 5.0GB
+  Index 11: Name: /System/Volumes/Update/mnt1 Type: Fixed Format: apfs Available: 22.2GB Total Free: 22.2GB Total Size: 228.3GB
+Granted Permissions:
+  macos.permission.RECORD_SCREEN
+Important Environment Variables:
+  PATH: /bin:/usr/bin
+  GODOT_ROOT_DIR: 
+  HOME: ~
+  DYLD_LIBRARY_PATH: 
+  LD_LIBRARY_PATH: 
+
+[INFO] Max ascension changed to 0
+[WARN] Asset not cached: res://scenes/screens/char_select/char_select_bg_ironclad.tscn
+[INFO] Max ascension changed to 10
+[INFO] [StartRunLobby (1)] CHARACTER.IRONCLAD ascension set to preferred: 0
+[WARN] Asset not cached: res://scenes/screens/char_select/char_select_bg_fool.tscn
+[INFO] Max ascension changed to 10
+[INFO] [StartRunLobby (1)] CHARACTER.FOOL ascension set to preferred: 0
+[INFO] [StartRunLobby (1)] Setting preferred Ascension for CHARACTER.FOOL to 10
+[INFO] Wrote 62604 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] [StartRunLobby (1)] Local player 1 is ready
+[INFO] Setting preferred Standard character to CHARACTER.FOOL
+[INFO] Wrote 62609 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Embarking on a singleplayer FOOL run. Ascension: 10 Seed: LKDHCMWUWT2G
+[WARN] Asset not cached: res://materials/transitions/fool_transition_mat.tres
+[INFO] First run ever. Presenting rooms in a set order.
+[INFO] Preloading 'characters=FOOL' assets... count=618 vfx=104
+[INFO] Preloading 'characters=FOOL' Complete: assets=722 time_elapsed=3,815ms
+[INFO] Preloading 'Act=OVERGROWTH' assets... count=8 vfx=0
+[INFO] Preloading 'Act=OVERGROWTH' Complete: assets=8 time_elapsed=43ms
+[sts2agent] RunStarted: preserved_control=false, mode=paused.
+[sts2agent] Headless run started: character=Fool, ascension=10, seed=LKDHCMWUWT2G.
+[INFO] Preloading 'Act=OVERGROWTH' assets... count=0 vfx=0
+[INFO] Preloading 'Act=OVERGROWTH' Complete: assets=0 time_elapsed=35ms
+[INFO] Wrote 62609 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 44070 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 3 missed cache assets
+[INFO] Preloading 'Event Room' assets... count=3 vfx=0
+[INFO] Preloading 'Event Room' Complete: assets=3 time_elapsed=107ms
+[WARN] Asset not cached: res://scenes/events/ancient_dialogue_line.tscn
+[WARN] Asset not cached: res://images/orbs/dark_orb.png
+[WARN] Asset not cached: res://images/orbs/frost_orb.png
+[WARN] Asset not cached: res://images/orbs/glass_orb.png
+[WARN] Asset not cached: res://images/orbs/lightning_orb.png
+[WARN] Asset not cached: res://images/orbs/plasma_orb.png
+[INFO] Wrote 62609 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 46517 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Wrote 62609 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 46867 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 6 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=10 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=10 time_elapsed=72ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=NIBBITS_WEAK.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 小啃兽 (index 1))
+[INFO] Monster NIBBIT performing move BUTT_MOVE
+[INFO] Player 1 playing card FOOLISH_SHOT (targeting 小啃兽 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[WARN] Asset not cached: res://images/powers/impaled_power.png
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster NIBBIT performing move SLICE_MOVE
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 小啃兽 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 小啃兽 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 小啃兽 (index 1))
+[INFO] Monster NIBBIT performing move HISS_MOVE
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 小啃兽 (index 1))
+[WARN] Warning: Packet writer is growing from 1024 bytes to 2048 bytes!
+[WARN] Warning: Packet writer is growing from 2048 bytes to 4096 bytes!
+[WARN] Warning: Packet writer is growing from 4096 bytes to 8192 bytes!
+[WARN] Warning: Packet writer is growing from 8192 bytes to 16384 bytes!
+[WARN] Warning: Packet writer is growing from 16384 bytes to 32768 bytes!
+[INFO] Wrote 47905 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.NIBBITS_WEAK for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.NIBBIT for the first time and WON >:(
+[INFO] Wrote 62912 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.9689442, need < -0.0351 for rare (offset = -0.05)
+[INFO] Card rarity: Rolled 0.44825354, need < -0.030100003 for rare (offset = -0.045)
+[INFO] Card rarity: Rolled 0.8284224, need < -0.025100004 for rare (offset = -0.040000003)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.RAIN_SHOT from card reward
+[INFO] Player 1 obtained 8 gold from reward
+[INFO] Player 1 obtained POTION.EXPLOSIVE_AMPOULE from potion reward
+[INFO] Wrote 62912 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 48757 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 6 missed cache assets
+[INFO] Preloading 'Event Room' assets... count=2 vfx=0
+[INFO] Preloading 'Event Room' Complete: assets=2 time_elapsed=47ms
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 chose cards [RAIN_SHOT]
+[WARN] Asset not cached: res://scenes/vfx/vfx_card_enchant.tscn
+[INFO] Wrote 62912 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 50566 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 3 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=11 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=11 time_elapsed=39ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=SLIMES_WEAK.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card RAIN_SHOT (targeting 树叶史莱姆（中） (index 2))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[WARN] Asset not cached: res://images/powers/impaled_power.png
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 树叶史莱姆（中） (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 树叶史莱姆（中） (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 树叶史莱姆（中） (index 1))
+[INFO] Wrote 51653 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.SLIMES_WEAK for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.LEAF_SLIME_S for the first time and WON >:(
+[INFO] CHARACTER.FOOL fought MONSTER.LEAF_SLIME_M for the first time and WON >:(
+[INFO] CHARACTER.FOOL fought MONSTER.TWIG_SLIME_S for the first time and WON >:(
+[INFO] Wrote 63422 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.913851, need < -0.020100005 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.42149085, need < -0.015100005 for rare (offset = -0.030000005)
+[INFO] Card rarity: Rolled 0.782664, need < -0.010100006 for rare (offset = -0.025000006)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.CHO_FIRM from card reward
+[INFO] Player 1 obtained 13 gold from reward
+[INFO] Wrote 63422 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 52236 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 6 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=2 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=2 time_elapsed=57ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=SHRINKER_BEETLE_WEAK.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card FOOLISH_SHOT (targeting 缩小甲虫 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[WARN] Asset not cached: res://images/powers/impaled_power.png
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 缩小甲虫 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 缩小甲虫 (index 1))
+[INFO] Monster SHRINKER_BEETLE performing move SHRINKER_MOVE
+[WARN] Asset not cached: res://images/powers/shrink_power.png
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 缩小甲虫 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 缩小甲虫 (index 1))
+[INFO] Wrote 53266 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.SHRINKER_BEETLE_WEAK for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.SHRINKER_BEETLE for the first time and WON >:(
+[INFO] Wrote 63731 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.85422194, need < -0.005100007 for rare (offset = -0.020000007)
+[INFO] Card rarity: Rolled 0.64265335, need < -0.00010000728 for rare (offset = -0.015000007)
+[INFO] Card rarity: Rolled 0.15203665, need < 0.0048999926 for rare (offset = -0.010000007)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.WAH_TOUCH from card reward
+[INFO] Player 1 obtained 15 gold from reward
+[INFO] Player has seen ftue combat_reward_ftue!
+[INFO] Wrote 63757 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 63757 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 53852 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 7 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=4 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=4 time_elapsed=52ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=INKLETS_NORMAL.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/slippery_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 墨宝 (index 1))
+[INFO] Player 1 playing card WAH_TOUCH (targeting 墨宝 (index 2))
+[WARN] Asset not cached: res://images/powers/vulnerable_power.png
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card RAIN_SHOT (targeting 墨宝 (index 2))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Player 1 playing card CHO_FIRM (no target)
+[INFO] Monster INKLET performing move JAB_MOVE
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 墨宝 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 墨宝 (index 1))
+[INFO] Wrote 54962 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.INKLETS_NORMAL for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.INKLET for the first time and WON >:(
+[INFO] Wrote 64060 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.034067582, need < 0.0098999925 for rare (offset = -0.0050000073)
+[INFO] Card rarity: Rolled 0.9360988, need < 0.014899992 for rare (offset = -7.450581E-09)
+[INFO] Card rarity: Rolled 0.2914363, need < 0.019899992 for rare (offset = 0.0049999924)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.WAH_BLAST from card reward
+[INFO] Player 1 obtained 14 gold from reward
+[INFO] Wrote 64060 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 55548 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 8 missed cache assets
+[INFO] Preloading 'RestSite Room' assets... count=3 vfx=2
+[INFO] Preloading 'RestSite Room' Complete: assets=5 time_elapsed=134ms
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 chose cards [WAH_TOUCH]
+[INFO] Wrote 64060 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 56447 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 2 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=8 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=8 time_elapsed=52ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=BYRDONIS_ELITE.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/territorial_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster BYRDONIS performing move SWOOP_MOVE
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[INFO] Player 1 playing card WAH_TOUCH (targeting 多尼斯异鸟 (index 1))
+[WARN] Asset not cached: res://images/powers/vulnerable_power.png
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 多尼斯异鸟 (index 1))
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster BYRDONIS performing move PECK_MOVE
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card RAIN_SHOT (targeting 多尼斯异鸟 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[WARN] Asset not cached: res://images/powers/impaled_power.png
+[INFO] Player 1 using potion DUPLICATOR (targeting 愚者 (index 0))
+[WARN] Asset not cached: res://images/powers/duplication_power.png
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 多尼斯异鸟 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 多尼斯异鸟 (index 1))
+[INFO] Player 1 playing card FOOLISH_SHOT (targeting 多尼斯异鸟 (index 1))
+[INFO] Wrote 57445 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.BYRDONIS_ELITE for the first time and WON >:)
+[INFO] Elites Defeated: 1/12
+[INFO] CHARACTER.FOOL fought MONSTER.BYRDONIS for the first time and WON >:(
+[INFO] Wrote 64363 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.76763505, need < 0.059999995 for rare (offset = 0.009999992)
+[INFO] Card rarity: Rolled 0.7332236, need < 0.06499999 for rare (offset = 0.014999992)
+[INFO] Card rarity: Rolled 0.058542773, need < 0.06999999 for rare (offset = 0.019999992)
+[WARN] Asset not cached: res://images/relics/regal_pillow.png
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.REPEAT_SHOT from card reward
+[INFO] Player 1 obtained 26 gold from reward
+[INFO] Player 1 obtained POTION.EXPLOSIVE_AMPOULE from potion reward
+[INFO] Player 1 obtained RELIC.REGAL_PILLOW from relic reward
+[INFO] Wrote 64363 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 58479 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 12 missed cache assets
+[INFO] Preloading 'RestSite Room' assets... count=3 vfx=2
+[INFO] Preloading 'RestSite Room' Complete: assets=5 time_elapsed=120ms
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 chose cards [REPEAT_SHOT]
+[INFO] Wrote 64363 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 59380 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 2 missed cache assets
+[INFO] Preloading 'Treasure Room' assets... count=2 vfx=0
+[INFO] Preloading 'Treasure Room' Complete: assets=2 time_elapsed=59ms
+[INFO] Forcing specific relic because it's the player's first treasure chest ever
+[WARN] Asset not cached: res://images/relics/gorget.png
+[INFO] Wrote 64363 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 60278 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 1 missed cache assets
+[INFO] Preloading 'RestSite Room' assets... count=3 vfx=2
+[INFO] Preloading 'RestSite Room' Complete: assets=5 time_elapsed=132ms
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 chose cards [CHO_FIRM]
+[INFO] Wrote 64363 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 61177 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 2 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=9 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=9 time_elapsed=67ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=MAWLER_NORMAL.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 playing card CHO_FIRM (no target)
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 蛮兽 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 蛮兽 (index 1))
+[INFO] Monster MAWLER performing move CLAW_MOVE
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 蛮兽 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Wrote 62188 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.MAWLER_NORMAL for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.MAWLER for the first time and WON >:(
+[INFO] Wrote 64665 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.96788985, need < -0.0351 for rare (offset = -0.05)
+[INFO] Card rarity: Rolled 0.36664546, need < -0.030100003 for rare (offset = -0.045)
+[INFO] Card rarity: Rolled 0.18801199, need < -0.025100004 for rare (offset = -0.040000003)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.CHO_LIMBS from card reward
+[INFO] Player 1 obtained 9 gold from reward
+[INFO] Player 1 discarding potion EXPLOSIVE_AMPOULE
+[INFO] Player 1 obtained POTION.WEAK_POTION from potion reward
+[INFO] Wrote 64665 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 63026 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 7 missed cache assets
+[INFO] Preloading 'RestSite Room' assets... count=3 vfx=2
+[INFO] Preloading 'RestSite Room' Complete: assets=5 time_elapsed=138ms
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 chose cards [WAH_BLAST]
+[INFO] Wrote 64665 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 63926 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.028494794, need < 0.009999998 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.31783494, need < 0.009999998 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.09037275, need < 0.009999998 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.82930374, need < 0.009999998 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.63905865, need < 0.009999998 for rare (offset = -0.035000004)
+[INFO] Unloading 2 missed cache assets
+[INFO] Preloading 'Standard Merchant Room' assets... count=1 vfx=0
+[INFO] Preloading 'Standard Merchant Room' Complete: assets=1 time_elapsed=86ms
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Wrote 64665 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 66480 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 2 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=11 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=11 time_elapsed=149ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=PHROG_PARASITE_ELITE.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/infested_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 异蛙寄生虫 (index 1))
+[INFO] Monster PHROG_PARASITE performing move INFECT_MOVE
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card FOOLISH_SHOT (targeting 异蛙寄生虫 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[WARN] Asset not cached: res://images/powers/impaled_power.png
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 异蛙寄生虫 (index 1))
+[INFO] Player 1 playing card BOLAS (targeting 异蛙寄生虫 (index 1))
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster PHROG_PARASITE performing move LASH_MOVE
+[INFO] Player 1 playing card BOLAS (targeting 异蛙寄生虫 (index 1))
+[INFO] Player 1 playing card WAH_BLAST (no target)
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 异蛙寄生虫 (index 1))
+[INFO] Monster PHROG_PARASITE performing move INFECT_MOVE
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 异蛙寄生虫 (index 1))
+[WARN] Asset not cached: res://scenes/creature_visuals/wriggler.tscn
+[WARN] Warning: Packet writer is growing from 1024 bytes to 2048 bytes!
+[INFO] Player 1 playing card WAH_TOUCH (targeting 扭动虫 (index 3))
+[WARN] Asset not cached: res://images/powers/vulnerable_power.png
+[INFO] Player 1 playing card BOLAS (targeting 扭动虫 (index 4))
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 扭动虫 (index 1))
+[INFO] Monster WRIGGLER performing move SPAWNED_MOVE
+[INFO] Monster WRIGGLER performing move SPAWNED_MOVE
+[INFO] Monster WRIGGLER performing move SPAWNED_MOVE
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 扭动虫 (index 2))
+[INFO] Player 1 playing card BOLAS (targeting 扭动虫 (index 2))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 扭动虫 (index 1))
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster WRIGGLER performing move WRIGGLE_MOVE
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[INFO] Monster WRIGGLER performing move WRIGGLE_MOVE
+[INFO] Player 1 playing card BOLAS (targeting 扭动虫 (index 2))
+[INFO] Player 1 playing card CHO_FIRM (no target)
+[INFO] Player 1 playing card CHO_LIMBS (no target)
+[INFO] Monster WRIGGLER performing move NASTY_BITE_MOVE
+[INFO] Monster WRIGGLER performing move NASTY_BITE_MOVE
+[INFO] Player 1 playing card WAH_BLAST (no target)
+[WARN] Warning: Packet writer is growing from 32768 bytes to 65536 bytes!
+[INFO] Wrote 67541 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.PHROG_PARASITE_ELITE for the first time and WON >:)
+[INFO] Elites Defeated: 2/12
+[INFO] CHARACTER.FOOL fought MONSTER.PHROG_PARASITE for the first time and WON >:(
+[INFO] CHARACTER.FOOL fought MONSTER.WRIGGLER for the first time and WON >:(
+[INFO] Wrote 65079 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.115423635, need < 0.014999997 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.68969864, need < 0.019999996 for rare (offset = -0.030000005)
+[INFO] Card rarity: Rolled 0.014158857, need < 0.024999995 for rare (offset = -0.025000006)
+[WARN] Asset not cached: res://images/relics/white_star.png
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained 26 gold from reward
+[INFO] Player 1 obtained RELIC.WHITE_STAR from relic reward
+[INFO] Wrote 65079 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 68054 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 13 missed cache assets
+[INFO] Preloading 'RestSite Room' assets... count=3 vfx=2
+[INFO] Preloading 'RestSite Room' Complete: assets=5 time_elapsed=119ms
+[INFO] Wrote 65079 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 68837 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Preloading 'Combat Room' assets... count=8 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=8 time_elapsed=89ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=VANTOM_BOSS.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/slippery_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 playing card CHO_FIRM (no target)
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card WAH_BLAST (no target)
+[INFO] Player 1 playing card BOLAS (targeting 墨影幻灵 (index 1))
+[INFO] Monster VANTOM performing move INK_BLOT_MOVE
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card BOLAS (targeting 墨影幻灵 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 墨影幻灵 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 墨影幻灵 (index 1))
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster VANTOM performing move INKY_LANCE_MOVE
+[INFO] Player 1 using potion WEAK_POTION (targeting 墨影幻灵 (index 1))
+[WARN] Asset not cached: res://materials/vfx/potion/potion_liquid_overlay.tres
+[WARN] Asset not cached: res://images/powers/weak_power.png
+[INFO] Player 1 using potion EXPLOSIVE_AMPOULE (no target)
+[INFO] Player 1 playing card BOLAS (targeting 墨影幻灵 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 墨影幻灵 (index 1))
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 墨影幻灵 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[WARN] Asset not cached: res://images/powers/impaled_power.png
+[INFO] Monster VANTOM performing move DISMEMBER_MOVE
+[INFO] Player 1 playing card WAH_TOUCH (targeting 墨影幻灵 (index 1))
+[WARN] Asset not cached: res://images/powers/vulnerable_power.png
+[INFO] Player 1 playing card BOLAS (targeting 墨影幻灵 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 墨影幻灵 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 墨影幻灵 (index 1))
+[INFO] Monster VANTOM performing move PREPARE_MOVE
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[INFO] Player 1 playing card FOOLISH_SHOT (targeting 墨影幻灵 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 墨影幻灵 (index 1))
+[INFO] Player 1 playing card BOLAS (targeting 墨影幻灵 (index 1))
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster VANTOM performing move INK_BLOT_MOVE
+[INFO] Player 1 playing card BOLAS (targeting 墨影幻灵 (index 1))
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 墨影幻灵 (index 1))
+[INFO] Wrote 69778 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.VANTOM_BOSS for the first time and WON >:)
+[INFO] Player already has Epoch: FOOL2_EPOCH
+[INFO] CHARACTER.FOOL fought MONSTER.VANTOM for the first time and WON >:(
+[INFO] Wrote 65379 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.49597234, need < 1 for rare (offset = 0)
+[INFO] Card rarity: Rolled 0.8390116, need < 1 for rare (offset = 0)
+[INFO] Card rarity: Rolled 0.739474, need < 1 for rare (offset = 0)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.BRIGHTEN_UP from card reward
+[INFO] Player 1 obtained 75 gold from reward
+[INFO] [ActChangeSynchronizer] Local player ready to move to next act
+[INFO] [ActChangeSynchronizer] All players ready to move to next act, beginning transition
+[WARN] Asset not cached: res://animations/map/the_insatiable_boss/the_insatiable_boss_node_skel_data.tres
+[INFO] Preloading 'Act=HIVE' assets... count=6 vfx=0
+[INFO] Preloading 'Act=HIVE' Complete: assets=6 time_elapsed=63ms
+[INFO] Wrote 65379 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 68298 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 14 missed cache assets
+[INFO] Preloading 'Event Room' assets... count=3 vfx=0
+[INFO] Preloading 'Event Room' Complete: assets=3 time_elapsed=123ms
+[WARN] Asset not cached: res://scenes/events/ancient_dialogue_line.tscn
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[WARN] Asset not cached: res://images/orbs/dark_orb.png
+[WARN] Asset not cached: res://images/orbs/frost_orb.png
+[WARN] Asset not cached: res://images/orbs/glass_orb.png
+[WARN] Asset not cached: res://images/orbs/lightning_orb.png
+[WARN] Asset not cached: res://images/orbs/plasma_orb.png
+[INFO] Wrote 65379 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 70208 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Wrote 65379 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 70527 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 7 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=11 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=11 time_elapsed=80ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=BOWLBUGS_WEAK.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/imbalanced_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 playing card BRIGHTEN_UP (no target)
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card WAH_BLAST (no target)
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 盛碗虫（卵） (index 2))
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 盛碗虫（石） (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Wrote 71577 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.BOWLBUGS_WEAK for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.BOWLBUG_ROCK for the first time and WON >:(
+[INFO] CHARACTER.FOOL fought MONSTER.BOWLBUG_EGG for the first time and WON >:(
+[INFO] Wrote 65786 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.9866424, need < -0.0351 for rare (offset = -0.05)
+[INFO] Card rarity: Rolled 0.9919528, need < -0.030100003 for rare (offset = -0.045)
+[INFO] Card rarity: Rolled 0.83630395, need < -0.025100004 for rare (offset = -0.040000003)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.DEEP_STRETCH from card reward
+[INFO] Player 1 obtained 9 gold from reward
+[INFO] Wrote 65786 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 72235 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 8 missed cache assets
+[INFO] Preloading 'Event Room' assets... count=2 vfx=1
+[INFO] Preloading 'Event Room' Complete: assets=3 time_elapsed=69ms
+[INFO] Player 1 discarding potion FIRE_POTION
+[INFO] Player 1 obtained POTION.FOUL_POTION from potion reward
+[INFO] Player 1 obtained POTION.FOUL_POTION from potion reward
+[INFO] Player 1 obtained POTION.FOUL_POTION from potion reward
+[INFO] Wrote 65786 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 74293 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.003108379, need < 0.009999998 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.6700535, need < 0.009999998 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.6487194, need < 0.009999998 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.8596152, need < 0.009999998 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.7458216, need < 0.009999998 for rare (offset = -0.035000004)
+[INFO] Preloading 'Standard Merchant Room' assets... count=1 vfx=0
+[INFO] Preloading 'Standard Merchant Room' Complete: assets=1 time_elapsed=68ms
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 using potion FOUL_POTION (no target)
+[INFO] Player 1 using potion FOUL_POTION (no target)
+[INFO] Player 1 using potion FOUL_POTION (no target)
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 chose cards [REPEAT_SHOT]
+[WARN] Asset not cached: res://scenes/vfx/vfx_card_enchant.tscn
+[INFO] Wrote 65786 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 77415 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 3 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=10 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=10 time_elapsed=86ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=THIEVING_HOPPER_WEAK.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/escape_artist_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 偷窃草蜢 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Wrote 78447 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.THIEVING_HOPPER_WEAK for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.THIEVING_HOPPER for the first time and WON >:(
+[INFO] Wrote 66095 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.08529237, need < -0.020100005 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.40561306, need < -0.015100005 for rare (offset = -0.030000005)
+[INFO] Card rarity: Rolled 0.9120947, need < -0.010100006 for rare (offset = -0.025000006)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained 7 gold from reward
+[INFO] Wrote 66095 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 78770 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 6 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=5 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=5 time_elapsed=48ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=HUNTER_KILLER_NORMAL.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 猎人杀手 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Wrote 79801 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.HUNTER_KILLER_NORMAL for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.HUNTER_KILLER for the first time and WON >:(
+[INFO] Wrote 66404 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.003386591, need < -0.005100007 for rare (offset = -0.020000007)
+[INFO] Card rarity: Rolled 0.5596778, need < -0.00010000728 for rare (offset = -0.015000007)
+[INFO] Card rarity: Rolled 0.98523426, need < 0.0048999926 for rare (offset = -0.010000007)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained 10 gold from reward
+[INFO] Player 1 obtained POTION.COLORLESS_POTION from potion reward
+[INFO] Wrote 66404 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 80422 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 6 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=7 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=7 time_elapsed=81ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=OVICOPTER_NORMAL.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 直飞产卵虫 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Wrote 81438 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.OVICOPTER_NORMAL for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.OVICOPTER for the first time and WON >:(
+[INFO] Wrote 66709 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.88660955, need < 0.0098999925 for rare (offset = -0.0050000073)
+[INFO] Card rarity: Rolled 0.80358016, need < 0.014899992 for rare (offset = -7.450581E-09)
+[INFO] Card rarity: Rolled 0.8335736, need < 0.019899992 for rare (offset = 0.0049999924)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.NOCK from card reward
+[INFO] Player 1 obtained 7 gold from reward
+[INFO] Player 1 obtained POTION.EXPLOSIVE_AMPOULE from potion reward
+[INFO] Wrote 66709 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 82261 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 6 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=13 vfx=1
+[INFO] Preloading 'Combat Room' Complete: assets=14 time_elapsed=82ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=DECIMILLIPEDE_ELITE.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/reattach_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 playing card DEEP_STRETCH (no target)
+[WARN] Asset not cached: res://images/powers/beta/stretch_power.png
+[INFO] Player 1 playing card BRIGHTEN_UP (no target)
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card WAH_CHO_KI (targeting 残杀千足虫 (index 2))
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card FOOLISH_SHOT (targeting 残杀千足虫 (index 2))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[WARN] Asset not cached: res://images/powers/impaled_power.png
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 残杀千足虫 (index 2))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 残杀千足虫 (index 2))
+[INFO] Player 1 using potion EXPLOSIVE_AMPOULE (no target)
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 残杀千足虫 (index 1))
+[INFO] Monster DECIMILLIPEDE_SEGMENT_FRONT performing move DEAD_MOVE
+[INFO] Monster DECIMILLIPEDE_SEGMENT_MIDDLE performing move DEAD_MOVE
+[INFO] Monster DECIMILLIPEDE_SEGMENT_BACK performing move BULK_MOVE
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Player 1 using potion COLORLESS_POTION (targeting 愚者 (index 0))
+[INFO] Player 1 chose cards [SECRET_WEAPON]
+[INFO] Player 1 playing card SECRET_WEAPON (no target)
+[INFO] Player 1 chose cards [WAH_TOUCH]
+[INFO] Player 1 playing card WAH_TOUCH (targeting 残杀千足虫 (index 3))
+[WARN] Asset not cached: res://images/powers/vulnerable_power.png
+[INFO] Player 1 playing card RAIN_SHOT (targeting 残杀千足虫 (index 3))
+[INFO] Player 1 playing card BOLAS (targeting 残杀千足虫 (index 3))
+[INFO] Wrote 83320 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.DECIMILLIPEDE_ELITE for the first time and WON >:)
+[INFO] Elites Defeated: 3/12
+[INFO] CHARACTER.FOOL fought MONSTER.DECIMILLIPEDE_SEGMENT_FRONT for the first time and WON >:(
+[INFO] CHARACTER.FOOL fought MONSTER.DECIMILLIPEDE_SEGMENT_MIDDLE for the first time and WON >:(
+[INFO] CHARACTER.FOOL fought MONSTER.DECIMILLIPEDE_SEGMENT_BACK for the first time and WON >:(
+[INFO] Wrote 67227 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.58043814, need < 0.059999995 for rare (offset = 0.009999992)
+[INFO] Card rarity: Rolled 0.524635, need < 0.06499999 for rare (offset = 0.014999992)
+[INFO] Card rarity: Rolled 0.05816491, need < 0.06999999 for rare (offset = 0.019999992)
+[INFO] Card rarity: Rolled 0.4633978, need < 1 for rare (offset = 0)
+[INFO] Card rarity: Rolled 0.3647613, need < 1 for rare (offset = 0)
+[INFO] Card rarity: Rolled 0.42775735, need < 1 for rare (offset = 0)
+[WARN] Asset not cached: res://images/relics/tuning_fork.png
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.HONING from card reward
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.LULLABY from card reward
+[INFO] Player 1 obtained 31 gold from reward
+[INFO] Player 1 obtained RELIC.TUNING_FORK from relic reward
+[INFO] Player 1 obtained POTION.POTION_OF_BINDING from potion reward
+[INFO] Wrote 67227 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 85241 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 13 missed cache assets
+[INFO] Preloading 'Treasure Room' assets... count=2 vfx=0
+[INFO] Preloading 'Treasure Room' Complete: assets=2 time_elapsed=35ms
+[WARN] Asset not cached: res://images/relics/unsettling_lamp.png
+[INFO] Wrote 67227 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 86146 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 1 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=14 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=14 time_elapsed=104ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=SLUMBERING_BEETLE_NORMAL.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/imbalanced_power.png
+[WARN] Asset not cached: res://images/powers/slumber_power.png
+[WARN] Asset not cached: res://scenes/vfx/vfx_sleeping.tscn
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 盛碗虫（丝） (index 2))
+[INFO] Player 1 playing card BOLAS (targeting 盛碗虫（丝） (index 2))
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 盛碗虫（石） (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Monster BOWLBUG_SILK performing move TOXIC_SPIT_MOVE
+[WARN] Asset not cached: res://images/powers/weak_power.png
+[INFO] Monster SLUMBERING_BEETLE performing move SNORE_MOVE
+[INFO] Player 1 playing card CHO_FIRM (no target)
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card WAH_TOUCH (targeting 盛碗虫（丝） (index 1))
+[WARN] Asset not cached: res://images/powers/vulnerable_power.png
+[INFO] Player 1 playing card BOLAS (targeting 盛碗虫（丝） (index 1))
+[INFO] Monster BOWLBUG_SILK performing move THRASH_MOVE
+[INFO] Monster SLUMBERING_BEETLE performing move SNORE_MOVE
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Player 1 playing card WAH_CHO_KI (targeting 盛碗虫（丝） (index 1))
+[INFO] Player 1 playing card BOLAS (targeting 盛碗虫（丝） (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 盛碗虫（丝） (index 1))
+[INFO] Player 1 playing card FOOLISH_SHOT (targeting 熟睡甲虫 (index 1))
+[WARN] Asset not cached: res://images/powers/impaled_power.png
+[INFO] Monster SLUMBERING_BEETLE performing move STUNNED
+[INFO] Player 1 playing card LULLABY (no target)
+[WARN] Asset not cached: res://images/powers/lullaby_power.png
+[INFO] Player 1 playing card BOLAS (targeting 熟睡甲虫 (index 1))
+[INFO] Player 1 playing card DEEP_STRETCH (no target)
+[WARN] Asset not cached: res://images/powers/beta/stretch_power.png
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 熟睡甲虫 (index 1))
+[INFO] Monster SLUMBERING_BEETLE performing move ROLL_OUT_MOVE
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[INFO] Player 1 playing card BOLAS (targeting 熟睡甲虫 (index 1))
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Player 1 playing card BRIGHTEN_UP (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 熟睡甲虫 (index 1))
+[INFO] Wrote 87261 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.SLUMBERING_BEETLE_NORMAL for the first time and WON >:)
+[INFO] CHARACTER.FOOL has killed a MONSTER.BOWLBUG_ROCK. That's 2 kills
+[INFO] CHARACTER.FOOL fought MONSTER.BOWLBUG_SILK for the first time and WON >:(
+[INFO] CHARACTER.FOOL fought MONSTER.SLUMBERING_BEETLE for the first time and WON >:(
+[INFO] Wrote 67645 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.93905586, need < -0.0351 for rare (offset = -0.05)
+[INFO] Card rarity: Rolled 0.02439851, need < -0.030100003 for rare (offset = -0.045)
+[INFO] Card rarity: Rolled 0.39979288, need < -0.025100004 for rare (offset = -0.040000003)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained 15 gold from reward
+[INFO] Wrote 67645 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 87646 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 16 missed cache assets
+[INFO] Preloading 'RestSite Room' assets... count=3 vfx=2
+[INFO] Preloading 'RestSite Room' Complete: assets=5 time_elapsed=105ms
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 chose cards [WAH_CHO_KI]
+[INFO] Wrote 67645 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 88547 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 2 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=10 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=10 time_elapsed=84ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=INFESTED_PRISMS_ELITE.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/vital_spark_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 感染棱柱 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Wrote 89572 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.INFESTED_PRISMS_ELITE for the first time and WON >:)
+[INFO] Elites Defeated: 4/12
+[INFO] CHARACTER.FOOL fought MONSTER.INFESTED_PRISM for the first time and WON >:(
+[INFO] Wrote 67955 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.90457386, need < 0.014999997 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.03860163, need < 0.019999996 for rare (offset = -0.030000005)
+[INFO] Card rarity: Rolled 0.9108104, need < 0.024999995 for rare (offset = -0.025000006)
+[INFO] Card rarity: Rolled 0.89225584, need < 1 for rare (offset = 0)
+[INFO] Card rarity: Rolled 0.7647775, need < 1 for rare (offset = 0)
+[INFO] Card rarity: Rolled 0.25216764, need < 1 for rare (offset = 0)
+[WARN] Asset not cached: res://images/relics/lasting_candy.png
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.ARROW_STAB from card reward
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.QUIVER from card reward
+[INFO] Player 1 obtained 30 gold from reward
+[INFO] Player 1 obtained RELIC.LASTING_CANDY from relic reward
+[INFO] Player 1 obtained POTION.SKILL_POTION from potion reward
+[INFO] Wrote 67955 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 91531 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 8 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=6 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=6 time_elapsed=81ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=MYTES_NORMAL.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card BRIGHTEN_UP (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card CHO_LIMBS (no target)
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card WAH_BLAST (no target)
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 异螨 (index 2))
+[INFO] Player 1 playing card ARROW_STAB (targeting 异螨 (index 2))
+[INFO] Player 1 chose cards []
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 异螨 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Monster MYTE performing move SUCK_MOVE
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[INFO] Player 1 playing card WAH_CHO_KI (targeting 异螨 (index 1))
+[INFO] Player 1 playing card BOLAS (targeting 异螨 (index 1))
+[INFO] Player 1 playing card DEEP_STRETCH (no target)
+[WARN] Asset not cached: res://images/powers/beta/stretch_power.png
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster MYTE performing move TOXIC_MOVE
+[INFO] Player 1 playing card CHO_FIRM (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster MYTE performing move BITE_MOVE
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Player 1 playing card FOOLISH_SHOT (targeting 异螨 (index 1))
+[INFO] Wrote 92568 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.MYTES_NORMAL for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.MYTE for the first time and WON >:(
+[INFO] Wrote 68256 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.3638142, need < -0.0351 for rare (offset = -0.05)
+[INFO] Card rarity: Rolled 0.6927702, need < -0.030100003 for rare (offset = -0.045)
+[INFO] Card rarity: Rolled 0.18855086, need < -0.025100004 for rare (offset = -0.040000003)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained 8 gold from reward
+[INFO] Player 1 obtained POTION.DISTILLED_CHAOS from potion reward
+[INFO] Wrote 68256 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 93217 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 9 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=4 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=4 time_elapsed=85ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=ENTOMANCER_ELITE.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/personal_hive_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 蜂群术士 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Wrote 94228 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.ENTOMANCER_ELITE for the first time and WON >:)
+[INFO] Elites Defeated: 5/12
+[INFO] CHARACTER.FOOL fought MONSTER.ENTOMANCER for the first time and WON >:(
+[INFO] Wrote 68561 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.38311085, need < 0.014999997 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.79492146, need < 0.019999996 for rare (offset = -0.030000005)
+[INFO] Card rarity: Rolled 0.5359569, need < 0.024999995 for rare (offset = -0.025000006)
+[INFO] Card rarity: Rolled 0.5093053, need < 1 for rare (offset = 0)
+[INFO] Card rarity: Rolled 0.04164556, need < 1 for rare (offset = 0)
+[INFO] Card rarity: Rolled 0.68974465, need < 1 for rare (offset = 0)
+[WARN] Asset not cached: res://images/relics/girya.png
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.ARROW_STAB from card reward
+[INFO] Player 1 selected card reward
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 obtained CARD.YAH from card reward
+[INFO] Player 1 obtained 28 gold from reward
+[INFO] Player 1 obtained RELIC.GIRYA from relic reward
+[INFO] Wrote 68561 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 95976 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 8 missed cache assets
+[INFO] Preloading 'RestSite Room' assets... count=4 vfx=2
+[INFO] Preloading 'RestSite Room' Complete: assets=6 time_elapsed=111ms
+[INFO] Wrote 68561 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 96759 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Preloading 'Combat Room' assets... count=9 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=9 time_elapsed=122ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=THE_INSATIABLE_BOSS.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 playing card LULLABY (no target)
+[WARN] Asset not cached: res://images/powers/lullaby_power.png
+[INFO] Player 1 using potion POTION_OF_BINDING (no target)
+[WARN] Asset not cached: res://scenes/vfx/vfx_smoke_puff.tscn
+[WARN] Asset not cached: res://images/powers/weak_power.png
+[WARN] Asset not cached: res://images/powers/vulnerable_power.png
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 无厌沙虫 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[WARN] Asset not cached: res://images/powers/impaled_power.png
+[INFO] Monster THE_INSATIABLE performing move LIQUIFY_GROUND_MOVE
+[WARN] Asset not cached: res://images/powers/sandpit_power.png
+[WARN] Horizontal layout is being used with more than five cards! They will go offscreen
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 无厌沙虫 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 无厌沙虫 (index 1))
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster THE_INSATIABLE performing move THRASH_MOVE
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card YAH (no target)
+[WARN] Asset not cached: res://images/powers/yah_power.png
+[INFO] Player 1 playing card BOLAS (targeting 无厌沙虫 (index 1))
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster THE_INSATIABLE performing move LUNGING_BITE_MOVE
+[INFO] Player 1 playing card BRIGHTEN_UP (no target)
+[INFO] Player 1 playing card BOLAS (targeting 无厌沙虫 (index 1))
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card CHO_FIRM (no target)
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card FRANTIC_ESCAPE (no target)
+[INFO] Player 1 playing card ARROW_STAB (targeting 无厌沙虫 (index 1))
+[INFO] Player 1 chose cards [REPEAT_SHOT]
+[INFO] Monster THE_INSATIABLE performing move SALIVATE_MOVE
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 无厌沙虫 (index 1))
+[INFO] Wrote 97776 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.THE_INSATIABLE_BOSS for the first time and WON >:)
+[INFO] Player already has Epoch: FOOL3_EPOCH
+[INFO] CHARACTER.FOOL fought MONSTER.THE_INSATIABLE for the first time and WON >:(
+[INFO] Wrote 68869 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.49277285, need < 1 for rare (offset = 0)
+[INFO] Card rarity: Rolled 0.8155783, need < 1 for rare (offset = 0)
+[INFO] Card rarity: Rolled 0.67653346, need < 1 for rare (offset = 0)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained 75 gold from reward
+[INFO] Player 1 obtained POTION.FAIRY_IN_A_BOTTLE from potion reward
+[INFO] [ActChangeSynchronizer] Local player ready to move to next act
+[INFO] [ActChangeSynchronizer] All players ready to move to next act, beginning transition
+[WARN] Asset not cached: res://animations/map/queen_boss/queen_boss_node_skel_data.tres
+[INFO] Preloading 'Act=GLORY' assets... count=8 vfx=0
+[INFO] Preloading 'Act=GLORY' Complete: assets=8 time_elapsed=79ms
+[INFO] Wrote 68869 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 96273 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 16 missed cache assets
+[INFO] Preloading 'Event Room' assets... count=3 vfx=0
+[INFO] Preloading 'Event Room' Complete: assets=3 time_elapsed=59ms
+[WARN] Asset not cached: res://scenes/events/ancient_dialogue_line.tscn
+[INFO] Wrote 68869 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 98211 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Wrote 68869 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 98533 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 1 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=9 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=9 time_elapsed=86ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=TURRET_OPERATOR_WEAK.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[WARN] Asset not cached: res://images/powers/rampart_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 playing card LULLABY (no target)
+[WARN] Asset not cached: res://images/powers/lullaby_power.png
+[INFO] Player 1 playing card BRIGHTEN_UP (no target)
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card CHO_FIRM (no target)
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card DEEP_STRETCH (no target)
+[WARN] Asset not cached: res://images/powers/beta/stretch_power.png
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 活体盾 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Monster TURRET_OPERATOR performing move UNLOAD_MOVE
+[INFO] Player 1 playing card ARROW_STAB (targeting 高塔炮手 (index 1))
+[INFO] Player 1 chose cards [REPEAT_SHOT]
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 高塔炮手 (index 1))
+[INFO] Wrote 99599 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.TURRET_OPERATOR_WEAK for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.LIVING_SHIELD for the first time and WON >:(
+[INFO] CHARACTER.FOOL fought MONSTER.TURRET_OPERATOR for the first time and WON >:(
+[INFO] Wrote 69283 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.81813574, need < -0.0351 for rare (offset = -0.05)
+[INFO] Card rarity: Rolled 0.92348623, need < -0.030100003 for rare (offset = -0.045)
+[INFO] Card rarity: Rolled 0.98836, need < -0.025100004 for rare (offset = -0.040000003)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.KI_WHIP from card reward
+[INFO] Player 1 obtained 12 gold from reward
+[INFO] Wrote 69283 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 100383 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 11 missed cache assets
+[INFO] Preloading 'Event Room' assets... count=2 vfx=0
+[INFO] Preloading 'Event Room' Complete: assets=2 time_elapsed=56ms
+[INFO] Wrote 69283 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 101880 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Preloading 'Combat Room' assets... count=8 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=8 time_elapsed=81ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=SCROLLS_OF_BITING_WEAK.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[WARN] Asset not cached: res://images/powers/paper_cuts_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 playing card WAH_BLAST (no target)
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card FOOLISH_SHOT (targeting 咬人卷轴 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Player 1 playing card ARROW_STAB (targeting 咬人卷轴 (index 1))
+[INFO] Player 1 chose cards [FOOLISH_SHOT]
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 咬人卷轴 (index 1))
+[INFO] Monster SCROLL_OF_BITING performing move MORE_TEETH
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 咬人卷轴 (index 1))
+[INFO] Wrote 103001 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.SCROLLS_OF_BITING_WEAK for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.SCROLL_OF_BITING for the first time and WON >:(
+[INFO] Wrote 69594 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.13866808, need < -0.020100005 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.79580986, need < -0.015100005 for rare (offset = -0.030000005)
+[INFO] Card rarity: Rolled 0.88383687, need < -0.010100006 for rare (offset = -0.025000006)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained 14 gold from reward
+[INFO] Player 1 discarding potion DISTILLED_CHAOS
+[INFO] Player 1 obtained POTION.RADIANT_TINCTURE from potion reward
+[INFO] Wrote 69594 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 103585 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.5320817, need < 0.024999995 for rare (offset = -0.020000007)
+[INFO] Card rarity: Rolled 0.9910381, need < 0.024999995 for rare (offset = -0.020000007)
+[INFO] Card rarity: Rolled 0.018199762, need < 0.024999995 for rare (offset = -0.020000007)
+[INFO] Card rarity: Rolled 0.6120949, need < 0.024999995 for rare (offset = -0.020000007)
+[INFO] Card rarity: Rolled 0.27222162, need < 0.024999995 for rare (offset = -0.020000007)
+[INFO] Unloading 8 missed cache assets
+[INFO] Preloading 'Standard Merchant Room' assets... count=1 vfx=0
+[INFO] Preloading 'Standard Merchant Room' Complete: assets=1 time_elapsed=66ms
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Wrote 69594 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 106540 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 1 missed cache assets
+[INFO] Preloading 'RestSite Room' assets... count=5 vfx=2
+[INFO] Preloading 'RestSite Room' Complete: assets=7 time_elapsed=110ms
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 chose cards [STRIKE_FOOL,STRIKE_FOOL]
+[INFO] Wrote 69594 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 107414 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 2 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=14 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=14 time_elapsed=90ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=KNIGHTS_ELITE.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card WAH_CHO_KI (targeting 连枷骑士 (index 1))
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card DEEP_STRETCH (no target)
+[WARN] Asset not cached: res://images/powers/beta/stretch_power.png
+[INFO] Player 1 playing card BOLAS (targeting 幽灵骑士 (index 2))
+[INFO] Player 1 playing card YAH (no target)
+[WARN] Asset not cached: res://images/powers/yah_power.png
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 连枷骑士 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Monster SPECTRAL_KNIGHT performing move HEX
+[WARN] Asset not cached: res://images/powers/hex_power.png
+[INFO] Monster MAGI_KNIGHT performing move POWER_SHIELD_MOVE
+[INFO] Player 1 using potion SKILL_POTION (targeting 愚者 (index 0))
+[INFO] Player 1 chose cards [ENCORE]
+[INFO] Player 1 playing card BOLAS (targeting 幽灵骑士 (index 1))
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card ARROW_STAB (targeting 幽灵骑士 (index 1))
+[INFO] Player 1 chose cards [REPEAT_SHOT]
+[INFO] Player 1 playing card ENCORE (no target)
+[WARN] Asset not cached: res://images/powers/beta/encore_power.png
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 幽灵骑士 (index 1))
+[WARN] Asset not cached: res://images/powers/impaled_power.png
+[INFO] Monster SPECTRAL_KNIGHT performing move SOUL_SLASH
+[INFO] Monster MAGI_KNIGHT performing move DAMPEN_MOVE
+[WARN] Asset not cached: res://images/powers/dampen_power.png
+[INFO] Player 1 playing card BOLAS (targeting 幽灵骑士 (index 1))
+[INFO] Player 1 playing card MOTIF (no target)
+[WARN] Asset not cached: res://images/powers/motif_power.png
+[INFO] Player 1 playing card CHO_FIRM (no target)
+[INFO] Player 1 using potion RADIANT_TINCTURE (targeting 愚者 (index 0))
+[WARN] Asset not cached: res://images/powers/radiance_power.png
+[INFO] Player 1 playing card BRIGHTEN_UP (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card LULLABY (no target)
+[WARN] Asset not cached: res://images/powers/lullaby_power.png
+[INFO] Player 1 playing card WAH_TOUCH (targeting 幽灵骑士 (index 1))
+[WARN] Asset not cached: res://images/powers/vulnerable_power.png
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 幽灵骑士 (index 1))
+[INFO] Player 1 playing card FOOLISH_SHOT (targeting 幽灵骑士 (index 1))
+[INFO] Monster MAGI_KNIGHT performing move RAM_MOVE
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Player 1 playing card KI_WHIP (targeting 魔法骑士 (index 1))
+[WARN] Asset not cached: res://images/powers/energy_next_turn_power.png
+[INFO] Player 1 playing card BOLAS (targeting 魔法骑士 (index 1))
+[INFO] Player 1 playing card ARROW_STAB (targeting 魔法骑士 (index 1))
+[INFO] Player 1 chose cards []
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 魔法骑士 (index 1))
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster MAGI_KNIGHT performing move PREP_MOVE
+[INFO] Player 1 playing card CHO_FIRM (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card WAH_CHO_KI (targeting 魔法骑士 (index 1))
+[INFO] Player 1 playing card CHO_LIMBS (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card ENCORE (no target)
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 魔法骑士 (index 1))
+[WARN] Warning: Packet writer is growing from 65536 bytes to 131072 bytes!
+[INFO] Wrote 108444 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.KNIGHTS_ELITE for the first time and WON >:)
+[INFO] Elites Defeated: 6/12
+[INFO] CHARACTER.FOOL fought MONSTER.FLAIL_KNIGHT for the first time and WON >:(
+[INFO] CHARACTER.FOOL fought MONSTER.SPECTRAL_KNIGHT for the first time and WON >:(
+[INFO] CHARACTER.FOOL fought MONSTER.MAGI_KNIGHT for the first time and WON >:(
+[INFO] Wrote 70106 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.25669459, need < 0.029999994 for rare (offset = -0.020000007)
+[INFO] Card rarity: Rolled 0.899402, need < 0.034999993 for rare (offset = -0.015000007)
+[INFO] Card rarity: Rolled 0.4276435, need < 0.03999999 for rare (offset = -0.010000007)
+[INFO] Card rarity: Rolled 0.9809267, need < 1 for rare (offset = 0)
+[INFO] Card rarity: Rolled 0.4599142, need < 1 for rare (offset = 0)
+[INFO] Card rarity: Rolled 0.5812667, need < 1 for rare (offset = 0)
+[WARN] Asset not cached: res://images/relics/centennial_puzzle.png
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.WAH_CHO from card reward
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.NAIL from card reward
+[INFO] Player 1 obtained 29 gold from reward
+[INFO] Player 1 obtained POTION.SKILL_POTION from potion reward
+[INFO] Player 1 obtained RELIC.CENTENNIAL_PUZZLE from relic reward
+[INFO] Wrote 70106 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 110393 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 20 missed cache assets
+[INFO] Preloading 'Treasure Room' assets... count=2 vfx=0
+[INFO] Preloading 'Treasure Room' Complete: assets=2 time_elapsed=54ms
+[WARN] Asset not cached: res://images/relics/war_paint.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Wrote 70106 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 111164 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 2 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=9 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=9 time_elapsed=86ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=OWL_MAGISTRATE_NORMAL.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 猫头鹰法官 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[WARN] Asset not cached: res://images/powers/impaled_power.png
+[INFO] Monster OWL_MAGISTRATE performing move MAGISTRATE_SCRUTINY
+[INFO] Player 1 playing card DEEP_STRETCH (no target)
+[WARN] Asset not cached: res://images/powers/beta/stretch_power.png
+[INFO] Player 1 playing card WAH_TOUCH (targeting 猫头鹰法官 (index 1))
+[WARN] Asset not cached: res://images/powers/vulnerable_power.png
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card ARROW_STAB (targeting 猫头鹰法官 (index 1))
+[INFO] Wrote 112202 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.OWL_MAGISTRATE_NORMAL for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.OWL_MAGISTRATE for the first time and WON >:(
+[INFO] Wrote 70416 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.05670654, need < -0.0351 for rare (offset = -0.05)
+[INFO] Card rarity: Rolled 0.13227771, need < -0.030100003 for rare (offset = -0.045)
+[INFO] Card rarity: Rolled 0.36190093, need < -0.025100004 for rare (offset = -0.040000003)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained 13 gold from reward
+[INFO] Player 1 obtained POTION.STRENGTH_POTION from potion reward
+[INFO] Wrote 70416 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 112792 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 11 missed cache assets
+[INFO] Preloading 'RestSite Room' assets... count=5 vfx=2
+[INFO] Preloading 'RestSite Room' Complete: assets=7 time_elapsed=137ms
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 chose cards [STRIKE_FOOL,STRIKE_FOOL]
+[INFO] Wrote 70416 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 113668 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 2 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=10 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=10 time_elapsed=101ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=GLOBE_HEAD_NORMAL.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[WARN] Asset not cached: res://images/powers/galvanic_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Player 1 playing card BRIGHTEN_UP (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card DEEP_STRETCH (no target)
+[WARN] Asset not cached: res://images/powers/beta/stretch_power.png
+[INFO] Player 1 playing card WAH_CHO (targeting 电球头 (index 1))
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card LULLABY (no target)
+[WARN] Asset not cached: res://images/powers/lullaby_power.png
+[INFO] Player 1 playing card KI_WHIP (targeting 电球头 (index 1))
+[WARN] Asset not cached: res://images/powers/energy_next_turn_power.png
+[INFO] Player 1 playing card HONING (no target)
+[WARN] Asset not cached: res://images/powers/honing_power.png
+[INFO] Monster GLOBE_HEAD performing move SHOCKING_SLAP
+[WARN] Asset not cached: res://images/powers/frail_power.png
+[INFO] Player 1 playing card CHO_FIRM (no target)
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 电球头 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Wrote 114688 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.GLOBE_HEAD_NORMAL for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.GLOBE_HEAD for the first time and WON >:(
+[INFO] Wrote 70722 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.765631, need < -0.020100005 for rare (offset = -0.035000004)
+[INFO] Card rarity: Rolled 0.19468866, need < -0.015100005 for rare (offset = -0.030000005)
+[INFO] Card rarity: Rolled 0.18540093, need < -0.010100006 for rare (offset = -0.025000006)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained 7 gold from reward
+[INFO] Wrote 70722 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 115173 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 14 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=2 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=2 time_elapsed=38ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=FROG_KNIGHT_NORMAL.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 青蛙骑士 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[WARN] Asset not cached: res://images/powers/impaled_power.png
+[INFO] Player 1 playing card BOLAS (targeting 青蛙骑士 (index 1))
+[INFO] Monster FROG_KNIGHT performing move TONGUE_LASH
+[WARN] Asset not cached: res://images/powers/frail_power.png
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Player 1 playing card LULLABY (no target)
+[WARN] Asset not cached: res://images/powers/lullaby_power.png
+[INFO] Player 1 playing card BRIGHTEN_UP (no target)
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card DEEP_STRETCH (no target)
+[WARN] Asset not cached: res://images/powers/beta/stretch_power.png
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card QUIVER (no target)
+[INFO] Player 1 playing card BOLAS (targeting 青蛙骑士 (index 1))
+[INFO] Player 1 playing card FOOLISH_SHOT (targeting 青蛙骑士 (index 1))
+[INFO] Monster FROG_KNIGHT performing move STRIKE_DOWN_EVIL
+[INFO] Player 1 playing card CHO_FIRM (no target)
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card WAH_CHO_KI (targeting 青蛙骑士 (index 1))
+[INFO] Player 1 playing card RAIN_SHOT (targeting 青蛙骑士 (index 1))
+[INFO] Player 1 playing card ARROW_STAB (targeting 青蛙骑士 (index 1))
+[INFO] Player 1 chose cards [REPEAT_SHOT]
+[INFO] Monster FROG_KNIGHT performing move FOR_THE_QUEEN
+[INFO] Player 1 playing card WAH_CHO (targeting 青蛙骑士 (index 1))
+[INFO] Player 1 playing card CHO_LIMBS (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 青蛙骑士 (index 1))
+[INFO] Wrote 116196 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.FROG_KNIGHT_NORMAL for the first time and WON >:)
+[INFO] CHARACTER.FOOL fought MONSTER.FROG_KNIGHT for the first time and WON >:(
+[INFO] Wrote 71029 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.90474033, need < -0.005100007 for rare (offset = -0.020000007)
+[INFO] Card rarity: Rolled 0.50771874, need < -0.00010000728 for rare (offset = -0.015000007)
+[INFO] Card rarity: Rolled 0.072925, need < 0.0048999926 for rare (offset = -0.010000007)
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.RAPID_SHOT from card reward
+[WARN] Asset not cached: res://images/orbs/dark_orb.png
+[WARN] Asset not cached: res://images/orbs/frost_orb.png
+[WARN] Asset not cached: res://images/orbs/glass_orb.png
+[WARN] Asset not cached: res://images/orbs/lightning_orb.png
+[WARN] Asset not cached: res://images/orbs/plasma_orb.png
+[INFO] Player 1 obtained 10 gold from reward
+[INFO] Wrote 71029 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 117080 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Card rarity: Rolled 0.36298096, need < 0.039999995 for rare (offset = -0.0050000073)
+[INFO] Card rarity: Rolled 0.00074467075, need < 0.039999995 for rare (offset = -0.0050000073)
+[INFO] Card rarity: Rolled 0.7077782, need < 0.039999995 for rare (offset = -0.0050000073)
+[INFO] Card rarity: Rolled 0.7629194, need < 0.039999995 for rare (offset = -0.0050000073)
+[INFO] Card rarity: Rolled 0.27760532, need < 0.039999995 for rare (offset = -0.0050000073)
+[INFO] Unloading 17 missed cache assets
+[INFO] Preloading 'Standard Merchant Room' assets... count=1 vfx=0
+[INFO] Preloading 'Standard Merchant Room' Complete: assets=1 time_elapsed=72ms
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 discarding potion SKILL_POTION
+[INFO] Wrote 71029 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 119344 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 2 missed cache assets
+[INFO] Preloading 'RestSite Room' assets... count=5 vfx=2
+[INFO] Preloading 'RestSite Room' Complete: assets=7 time_elapsed=92ms
+[INFO] Wrote 71029 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 120127 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Preloading 'Combat Room' assets... count=15 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=15 time_elapsed=71ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=QUEEN_BOSS.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[WARN] Asset not cached: res://images/powers/minion_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 playing card LULLABY (no target)
+[WARN] Asset not cached: res://images/powers/lullaby_power.png
+[INFO] Player 1 using potion CURE_ALL (targeting 愚者 (index 0))
+[WARN] Asset not cached: res://materials/vfx/potion/potion_liquid_overlay.tres
+[INFO] Player 1 using potion OROBIC_ACID (targeting 愚者 (index 0))
+[INFO] Player 1 playing card ECSTASY (no target)
+[WARN] Asset not cached: res://images/powers/ecstasy_power.png
+[INFO] Player 1 playing card RUMMAGE (no target)
+[INFO] Player 1 playing card DEEP_STRETCH (no target)
+[WARN] Asset not cached: res://images/powers/beta/stretch_power.png
+[INFO] Player 1 playing card CHO_FIRM (no target)
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card MELODIC_SHOT (targeting 女王 (index 2))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[WARN] Asset not cached: res://images/powers/impaled_power.png
+[INFO] Player 1 playing card NAIL (targeting 女王 (index 2))
+[WARN] Asset not cached: res://images/powers/weak_power.png
+[WARN] Asset not cached: res://images/powers/vulnerable_power.png
+[INFO] Player 1 playing card BOLAS (targeting 女王 (index 2))
+[INFO] Player 1 playing card ARROW_STAB (targeting 女王 (index 2))
+[INFO] Player 1 chose cards [MELODIC_SHOT]
+[INFO] Player 1 playing card MOTIF (no target)
+[WARN] Asset not cached: res://images/powers/motif_power.png
+[INFO] Player 1 playing card QUIVER (no target)
+[INFO] Monster TORCH_HEAD_AMALGAM performing move STRONG_TACKLE_MOVE
+[INFO] Monster QUEEN performing move PUPPET_STRINGS_MOVE
+[WARN] Asset not cached: res://images/powers/chains_of_binding_power.png
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card WAH_TOUCH (targeting 女王 (index 2))
+[INFO] Player 1 playing card KI_WHIP (targeting 女王 (index 2))
+[WARN] Asset not cached: res://images/powers/energy_next_turn_power.png
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Player 1 playing card BOLAS (targeting 女王 (index 2))
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster TORCH_HEAD_AMALGAM performing move TACKLE_2_MOVE
+[INFO] Monster QUEEN performing move YOU_ARE_MINE_MOVE
+[WARN] Asset not cached: res://images/powers/frail_power.png
+[INFO] Player 1 playing card RAIN_SHOT (targeting 女王 (index 2))
+[INFO] Player 1 playing card BOLAS (targeting 女王 (index 2))
+[INFO] Player 1 playing card WAH_CHO_KI (targeting 女王 (index 2))
+[INFO] Player 1 playing card FOOLISH_SHOT (targeting 女王 (index 2))
+[INFO] Player 1 playing card ARROW_STAB (targeting 女王 (index 2))
+[INFO] Player 1 chose cards [MELODIC_SHOT]
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Player 1 using potion PRECISION_POTION (targeting 愚者 (index 0))
+[INFO] Player 1 playing card MELODIC_SHOT (targeting 女王 (index 2))
+[INFO] Player 1 playing card BRIGHTEN_UP (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster TORCH_HEAD_AMALGAM performing move BEAM_MOVE
+[INFO] Monster QUEEN performing move BURN_BRIGHT_FOR_ME_MOVE
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 女王 (index 2))
+[INFO] Wrote 121062 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] CHARACTER.FOOL fought ENCOUNTER.QUEEN_BOSS for the first time and WON >:)
+[INFO] Player already has Epoch: FOOL4_EPOCH
+[INFO] CHARACTER.FOOL fought MONSTER.TORCH_HEAD_AMALGAM for the first time and WON >:(
+[INFO] CHARACTER.FOOL fought MONSTER.QUEEN for the first time and WON >:(
+[INFO] Wrote 71433 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 71433 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 120893 bytes to path=user://default/1/modded/profile1/saves/current_run.save save_dir=user://default/1
+[INFO] Unloading 20 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=9 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=9 time_elapsed=70ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=TEST_SUBJECT_BOSS.
+[WARN] Asset not cached: res://scenes/combat/fool_arrow.tscn
+[WARN] Asset not cached: res://images/powers/aim_power.png
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[WARN] Asset not cached: res://images/powers/adaptable_power.png
+[WARN] Asset not cached: res://images/powers/enrage_power.png
+[WARN] Asset not cached: res://materials/cards/frames/card_frame_yellow_mat.tres
+[INFO] Player 1 using potion STRENGTH_POTION (targeting 愚者 (index 0))
+[WARN] Asset not cached: res://materials/vfx/potion/potion_liquid_overlay.tres
+[INFO] Player 1 playing card DEEP_STRETCH (no target)
+[WARN] Asset not cached: res://images/powers/beta/stretch_power.png
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 实验体 #C8 (index 1))
+[WARN] Asset not cached: res://scenes/vfx/impaled_arrow_vfx.tscn
+[INFO] Monster TEST_SUBJECT performing move RESPAWN_MOVE
+[WARN] Asset not cached: res://images/powers/painful_stabs_power.png
+[WARN] Asset not cached: res://images/packed/sprite_fonts/fool_energy_icon.png
+[INFO] Player 1 playing card BRIGHTEN_UP (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card JOY (no target)
+[INFO] Player 1 playing card MOTIF (no target)
+[WARN] Asset not cached: res://images/powers/motif_power.png
+[INFO] Player 1 playing card WAH_BLAST (no target)
+[WARN] Asset not cached: res://scenes/combat/fool_combat_symbol.tscn
+[INFO] Player 1 playing card BOLAS (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card CHO_LIMBS (no target)
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Monster TEST_SUBJECT performing move MULTI_CLAW_MOVE
+[INFO] Player 1 playing card WAH_TOUCH (targeting 实验体 #C8 (index 1))
+[WARN] Asset not cached: res://images/powers/vulnerable_power.png
+[INFO] Player 1 playing card RAIN_SHOT (targeting 实验体 #C8 (index 1))
+[WARN] Asset not cached: res://images/powers/impaled_power.png
+[INFO] Player 1 playing card BOLAS (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card KI_WHIP (targeting 实验体 #C8 (index 1))
+[WARN] Asset not cached: res://images/powers/energy_next_turn_power.png
+[INFO] Player 1 playing card QUIVER (no target)
+[INFO] Monster TEST_SUBJECT performing move MULTI_CLAW_MOVE
+[INFO] Player 1 playing card LULLABY (no target)
+[WARN] Asset not cached: res://images/powers/lullaby_power.png
+[INFO] Player 1 playing card NAIL (targeting 实验体 #C8 (index 1))
+[WARN] Asset not cached: res://images/powers/weak_power.png
+[INFO] Player 1 playing card BOLAS (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card WAH_CHO (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Player 1 playing card WAH_CHO_KI (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card KI_WHIP (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card FOOLISH_SHOT (targeting 实验体 #C8 (index 1))
+[INFO] Monster TEST_SUBJECT performing move RESPAWN_MOVE
+[WARN] Asset not cached: res://images/powers/nemesis_power.png
+[WARN] Asset not cached: res://images/powers/intangible_power.png
+[INFO] Player 1 playing card YAH (no target)
+[WARN] Asset not cached: res://images/powers/yah_power.png
+[INFO] Player 1 playing card RAIN_SHOT (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card STRIKE_FOOL (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card BOLAS (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card NOCK (no target)
+[INFO] Monster TEST_SUBJECT performing move PHASE3_LACERATE_MOVE
+[INFO] Player 1 playing card NAIL (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card RAPID_SHOT (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card BOLAS (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card REPEAT_SHOT (targeting 实验体 #C8 (index 1))
+[INFO] Monster TEST_SUBJECT performing move BIG_POUNCE
+[INFO] Player 1 playing card BOLAS (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card WAH_TOUCH (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card ARROW_STAB (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 chose cards [REPEAT_SHOT]
+[INFO] Player 1 playing card CHO_FIRM (no target)
+[INFO] Player 1 playing card CHO_LIMBS (no target)
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster TEST_SUBJECT performing move BURNING_GROWL_MOVE
+[WARN] Asset not cached: res://scenes/vfx/monsters/test_subject_burn_vfx.tscn
+[INFO] Player 1 playing card DEEP_STRETCH (no target)
+[INFO] Player 1 playing card NAIL (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card BOLAS (targeting 实验体 #C8 (index 1))
+[INFO] Player 1 playing card DEFEND_FOOL (no target)
+[INFO] Monster TEST_SUBJECT performing move PHASE3_LACERATE_MOVE
+[INFO] Monster TEST_SUBJECT performing move BIG_POUNCE
+[INFO] CHARACTER.FOOL fought ENCOUNTER.TEST_SUBJECT_BOSS for the first time and LOST :(
+[INFO] CHARACTER.FOOL fought MONSTER.TEST_SUBJECT for the first time and LOST >:(
+[INFO] Player already has Epoch: NEOW_EPOCH
+[INFO] Player already has Epoch: DREAD_EPOCH
+[INFO] Player already has Epoch: OROBAS_EPOCH
+[INFO] Player already has Epoch: BLITZ_EPOCH
+[INFO] Wrote 81082 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 82379 bytes to path=user://default/1/modded/profile1/saves/history/1795194187.run save_dir=user://default/1
+[INFO] Saved run history: 1795194187.run
+[INFO] Created Run History entry!
+[INFO] Skipping metrics upload, this is our first run ever.
+[sts2agent] Headless termination invoking NGame.Quit.
+[INFO] NGame.Quit called
+[INFO] Wrote 3351 bytes to path=user://default/1/settings.save save_dir=user://default/1
+[INFO] Wrote 351 bytes to path=user://default/1/modded/profile1/saves/prefs.save save_dir=user://default/1
+[INFO] Wrote 81082 bytes to path=user://default/1/modded/profile1/saves/progress.save save_dir=user://default/1
+[INFO] Wrote 49 bytes to path=user://default/1/modded/profile.save save_dir=user://default/1

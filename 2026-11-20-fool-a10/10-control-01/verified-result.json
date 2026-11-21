@@ -1,0 +1,15 @@
+{
+  "arm": "control",
+  "index": 10,
+  "seed": "EFASQDOT1IH5",
+  "attempt": 1,
+  "started": "2026-11-20T15:19:06.674230+00:00",
+  "exit": 0,
+  "state": "terminal",
+  "ended": "2026-11-20T16:39:34.065842+00:00",
+  "canonical_seed": "EFASQD0T11H5",
+  "native_result": "defeat",
+  "terminal_hp": 0,
+  "terminal_floor": 49,
+  "earlier_seed_check_error": "RuntimeError: Observed seed differs from the declared holdout."
+}

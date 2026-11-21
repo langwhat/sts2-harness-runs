@@ -1,0 +1,51 @@
+{
+  "scope": "Interpret immutable ASCII seed literals using native v0.113.1 canonicalization. Keep the declared launch inputs and all arms unchanged.",
+  "canonicalized_entries": {
+    "07": {
+      "declared": "R4D4F3G1DCI8",
+      "native": "R4D4F3G1DC18"
+    },
+    "08": {
+      "declared": "RUBX2O60M76S",
+      "native": "RUBX2060M76S"
+    },
+    "10": {
+      "declared": "EFASQDOT1IH5",
+      "native": "EFASQD0T11H5"
+    },
+    "11": {
+      "declared": "PUQMC1CYQQNI",
+      "native": "PUQMC1CYQQN1"
+    },
+    "17": {
+      "declared": "OLMHJT09JU1C",
+      "native": "0LMHJT09JU1C"
+    },
+    "18": {
+      "declared": "QUVTKDOV1PCR",
+      "native": "QUVTKD0V1PCR"
+    },
+    "19": {
+      "declared": "FIMQIZAK2F4G",
+      "native": "F1MQ1ZAK2F4G"
+    },
+    "20": {
+      "declared": "D7KJBUGOVHR8",
+      "native": "D7KJBUG0VHR8"
+    }
+  },
+  "protocol_sha256": "f446cc4106a021628847fa0191f1afb42b52bb4954988dca55dc73a563cf635b",
+  "initial_runner_sha256": "9284662b149fda83a0953ba49001cdf40b01901c923b4b81f9633bdce128ac86",
+  "native_source": {
+    "entry": "game-v0.113.1-decompiled/MegaCrit.Sts2.Core.Helpers/SeedHelper.cs",
+    "sha256": "58bafe6f36b36f9e947a5c47098971ebc1e3cbbe9b60ae447d5fbe59dd7e1d7d"
+  },
+  "scripts_sha256": {
+    "holdout_seed.py": "50a50c9a1c3988a069918fc69da72fe9c95199f4dd8d19f09176cf082ce47e2f",
+    "run_full.py": "0cba4f8595c32a631f9cb31ad9a438b04bb32568fe3e5a77e49d064a1a342a1c",
+    "recover_holdout_seed.py": "96069fff9dd836adf89a3d4059adf0bae0d2e64f4e66797305a25f73cf7e6a3d",
+    "compare.py": "cc549c864b8503c025034f935e326a7de9e0a4b782b6d14127f882641adee2b0"
+  },
+  "admission": "A completed and effect-verified start receipt, the archive manifest and its native terminal, and the unique non-custom, non-abandoned Fool A10 native history must correspond. Recover only a previously completed zero-exit trial whose sole result error was raw-versus-canonical seed comparison. Keep the original result and add a separately verified sealed result. Do not rerun eligible completed trials.",
+  "outcomes_inspected": false
+}

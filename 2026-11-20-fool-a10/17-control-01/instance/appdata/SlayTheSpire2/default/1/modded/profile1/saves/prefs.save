@@ -1,0 +1,15 @@
+{
+  "bestiary_actions_preferred": true,
+  "fast_mode": "normal",
+  "keyboard_mode": false,
+  "long_press": false,
+  "mute_in_background": true,
+  "phobia_mode": false,
+  "schema_version": 2,
+  "screenshake": 2,
+  "show_card_indices": false,
+  "show_mp_drawings": true,
+  "show_run_timer": false,
+  "text_effects_enabled": true,
+  "upload_data": true
+}

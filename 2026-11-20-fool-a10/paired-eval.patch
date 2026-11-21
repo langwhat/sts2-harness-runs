@@ -1,0 +1,462 @@
+diff --git a/mod/src/Sts2Mod.Core/Developer/CheckpointContract.cs b/mod/src/Sts2Mod.Core/Developer/CheckpointContract.cs
+index 5a1a2cc..388486e 100644
+--- a/mod/src/Sts2Mod.Core/Developer/CheckpointContract.cs
++++ b/mod/src/Sts2Mod.Core/Developer/CheckpointContract.cs
+@@ -225,6 +225,7 @@ public enum CheckpointRewardBindingKind
+     PickAction,
+     AlternativeAction,
+     ProceedAction,
++    ContentObject,
+ }
+ 
+ public sealed record CheckpointRewardAddress(
+diff --git a/mod/src/Sts2Mod/Developer/CheckpointIdentities.cs b/mod/src/Sts2Mod/Developer/CheckpointIdentities.cs
+index 74f7819..7da7544 100644
+--- a/mod/src/Sts2Mod/Developer/CheckpointIdentities.cs
++++ b/mod/src/Sts2Mod/Developer/CheckpointIdentities.cs
+@@ -47,12 +47,12 @@ internal static class CheckpointIdentities
+                 case EnemyEntry or AllyEntry:
+                     creatures.Add(new(reference, Resolve<Creature>(registry, reference).CombatId));
+                     break;
+-                case RelicEntry:
+-                    relics.Add(RelicSlot(reference, Resolve<RelicModel>(registry, reference)));
+-                    break;
+             }
+         }
+ 
++        foreach (var reference in observation.State.Relics)
++            relics.Add(RelicSlot(reference, Resolve<RelicModel>(registry, reference)));
++
+         if (observation.State is RunStateView { Screen: RunScreen.Map } run)
+         {
+             foreach (var action in run.Actions)
+@@ -64,9 +64,11 @@ internal static class CheckpointIdentities
+             }
+         }
+ 
+-        var canonicalCards = cards
++        var anchoredObjects = cards
+             .Where(card => card.CombatCardId is not null || card.DeckCard is not null)
+             .Select(card => card.Ref)
++            .Concat(observation.State.Relics)
++            .Concat(observation.State.Potions)
+             .ToHashSet(StringComparer.Ordinal);
+ 
+         return new(
+@@ -74,7 +76,7 @@ internal static class CheckpointIdentities
+             creatures.ToImmutable(),
+             map.ToImmutable(),
+             relics.ToImmutable(),
+-            RewardCheckpointIdentities.Capture(observation, registry, canonicalCards));
++            RewardCheckpointIdentities.Capture(observation, registry, anchoredObjects));
+     }
+ 
+     private static uint? CombatCardId(CardModel card)
+@@ -185,7 +187,7 @@ internal static class RewardCheckpointIdentities
+     public static ImmutableArray<CheckpointRewardIdentity> Capture(
+         NativeObservation observation,
+         NodeObjectRegistry registry,
+-        IReadOnlySet<string> canonicalCards)
++        IReadOnlySet<string> anchoredObjects)
+     {
+         if (observation.State is not RunStateView { Screen: RunScreen.Rewards } state
+             || NOverlayStack.Instance is not { } overlays)
+@@ -218,6 +220,14 @@ internal static class RewardCheckpointIdentities
+                 .Select((creation, slot) => (Reward: reward, Creation: creation, Slot: slot)))
+             .ToArray();
+ 
++        var singleContents = set.Rewards.Select(reward => (Reward: reward, Content: reward switch
++        {
++            RelicReward relic => (object?)relic.Relic,
++            PotionReward potion => potion.Potion,
++            SpecialCardReward special => RunSurfaceLifecycle.GetSpecialRewardCard(special),
++            _ => null,
++        })).Where(item => item.Content is not null).ToArray();
++
+         CardReward? parent = null;
+         NCardHolder[] holders = [];
+         NCardRewardAlternativeButton[] alternatives = [];
+@@ -260,7 +270,7 @@ internal static class RewardCheckpointIdentities
+         var identities = ImmutableArray.CreateBuilder<CheckpointRewardIdentity>();
+         foreach (var reference in observation.Objects.Keys.Concat(state.Actions.Select(action => action.Ref)).Distinct())
+         {
+-            if (canonicalCards.Contains(reference))
++            if (anchoredObjects.Contains(reference))
+                 continue;
+             if (!registry.TryResolve<object>(reference, out var subject))
+                 throw new InvalidOperationException("A published reward reference has no native binding.");
+@@ -320,6 +330,12 @@ internal static class RewardCheckpointIdentities
+                     break;
+             }
+ 
++            if (address is null)
++            {
++                var matches = singleContents.Where(item => ReferenceEquals(item.Content, subject)).ToArray();
++                if (matches.Length == 1)
++                    address = Address(set, matches[0].Reward, CheckpointRewardBindingKind.ContentObject);
++            }
+             if (address is not null)
+                 identities.Add(new(reference, address));
+         }
+diff --git a/src/sts2_harness_eval/_sample_binding.py b/src/sts2_harness_eval/_sample_binding.py
+index b6c02d7..86ea54d 100644
+--- a/src/sts2_harness_eval/_sample_binding.py
++++ b/src/sts2_harness_eval/_sample_binding.py
+@@ -14,7 +14,7 @@ from sts2_harness.journal import (
+     SceneVariant,
+ )
+ from sts2_harness_eval.assessment_records import CaseTargetRef, SceneInitialRef
+-from sts2_harness_eval.cases import AfterDecisionsSpec, Case, CaseStore
++from sts2_harness_eval.cases import AfterDecisionsSpec, Case, CaseStore, RunEndSpec
+ from sts2_harness_eval.checkpoints import ReloadTarget
+ from sts2_harness_eval.execution_record import (
+     AnchorRecord,
+@@ -23,6 +23,7 @@ from sts2_harness_eval.execution_record import (
+     DecisionEndpoint,
+     ExecutionRecord,
+     ReachedRecord,
++    RunEndpoint,
+     UnsupportedExecution,
+ )
+ 
+@@ -92,6 +93,9 @@ def bind_sample(
+         if isinstance(expected, AfterDecisionsSpec):
+             if not isinstance(endpoint, DecisionEndpoint) or endpoint.count != expected.count:
+                 raise ValueError("The completed endpoint does not match the case.")
++        elif isinstance(expected, RunEndSpec):
++            if not isinstance(endpoint, RunEndpoint):
++                raise ValueError("The completed run endpoint does not match the case.")
+         elif (
+             not isinstance(endpoint, BattleEndpoint) or endpoint.node_id != target.location.node_id
+         ):
+diff --git a/src/sts2_harness_eval/cases.py b/src/sts2_harness_eval/cases.py
+index 51afbfb..f7f9e93 100644
+--- a/src/sts2_harness_eval/cases.py
++++ b/src/sts2_harness_eval/cases.py
+@@ -71,6 +71,7 @@ class CheckpointRef(native.WireModel):
+ class EndpointKind(StrEnum):
+     AFTER_DECISIONS = "after_decisions"
+     TARGET_BATTLE = "target_battle"
++    RUN_END = "run_end"
+ 
+ 
+ class AfterDecisionsSpec(native.WireModel):
+@@ -82,7 +83,13 @@ class TargetBattle(native.WireModel):
+     kind: Literal[EndpointKind.TARGET_BATTLE] = EndpointKind.TARGET_BATTLE
+ 
+ 
+-type CaseEndpoint = Annotated[AfterDecisionsSpec | TargetBattle, Field(discriminator="kind")]
++class RunEndSpec(native.WireModel):
++    kind: Literal[EndpointKind.RUN_END] = EndpointKind.RUN_END
++
++
++type CaseEndpoint = Annotated[
++    AfterDecisionsSpec | TargetBattle | RunEndSpec, Field(discriminator="kind")
++]
+ 
+ 
+ class Case(native.WireModel):
+@@ -370,9 +377,15 @@ def plan_admission(request: AdmissionRequest, staging: Path) -> AdmissionPlan:
+         if target_observation is None or not (
+             isinstance(target_observation.state, native.CombatState)
+             or (
+-                isinstance(request.endpoint, AfterDecisionsSpec)
+-                and request.endpoint.count == 1
+-                and _card_reward_selection(target_observation)
++                (
++                    isinstance(request.endpoint, RunEndSpec)
++                    or isinstance(request.endpoint, AfterDecisionsSpec)
++                    and request.endpoint.count == 1
++                )
++                and (
++                    _card_reward_selection(target_observation)
++                    or bool(_available_card_rewards(target_observation))
++                )
+             )
+         ):
+             _unsupported(UnsupportedCause.TARGET, target.sequence)
+@@ -436,7 +449,56 @@ def _card_reward_selection(observation: native.Observation) -> bool:
+     )
+ 
+ 
++def _available_card_rewards(observation: native.Observation) -> tuple[native.Offer, ...]:
++    state = observation.state
++    if (
++        not isinstance(state, native.RunState)
++        or state.screen is not native.RunScreen.REWARDS
++        or state.selection is not None
++        or observation.input_readiness is not native.InputReadiness.READY
++    ):
++        return ()
++    return tuple(
++        offer
++        for offer in state.offers
++        if offer.kind is native.OfferKind.CARD
++        and offer.contents
++        and all(
++            isinstance(observation.objects.get(ref), native.CardEntry) for ref in offer.contents
++        )
++        and any(action.enabled and action.ref in offer.actions for action in state.actions)
++    )
++
++
+ def _reward_follow_on(target: native.Observation, span: ReplaySpan) -> bool:
++    after = span.after
++    if (
++        after.input_readiness is not native.InputReadiness.READY
++        or not isinstance(after.state, native.RunState)
++        or after.state.screen is not native.RunScreen.REWARDS
++        or after.state.selection is not None
++    ):
++        return False
++    if len(span.steps) == 2:
++        opened, picked = span.steps
++        if (
++            not isinstance(opened.step, native.Interact)
++            or opened.boundary is not native.InputReadiness.SELECTION
++            or not isinstance(picked.step, native.Select)
++            or len(picked.step.refs) > 1
++            or picked.boundary is not native.InputReadiness.READY
++        ):
++            return False
++        return any(
++            opened.step.action in offer.actions
++            and set(picked.step.refs) <= set(offer.contents)
++            and any(
++                prior.ref == offer.ref and prior.contents == offer.contents
++                for prior in _available_card_rewards(target)
++            )
++            and all(remaining.ref != offer.ref for remaining in after.state.offers)
++            for offer in _available_card_rewards(span.before)
++        )
+     if (
+         len(span.steps) != 1
+         or not _card_reward_selection(target)
+@@ -457,14 +519,7 @@ def _reward_follow_on(target: native.Observation, span: ReplaySpan) -> bool:
+         )
+     else:
+         return False
+-    after = span.after
+-    return (
+-        valid_choice
+-        and after.input_readiness is native.InputReadiness.READY
+-        and isinstance(after.state, native.RunState)
+-        and after.state.screen is native.RunScreen.REWARDS
+-        and after.state.selection is None
+-    )
++    return valid_choice
+ 
+ 
+ class Artifact(StrEnum):
+diff --git a/src/sts2_harness_eval/checkpoints.py b/src/sts2_harness_eval/checkpoints.py
+index 393caeb..cdab7f5 100644
+--- a/src/sts2_harness_eval/checkpoints.py
++++ b/src/sts2_harness_eval/checkpoints.py
+@@ -49,6 +49,7 @@ class RewardBindingKind(StrEnum):
+     PICK_ACTION = "pick_action"
+     ALTERNATIVE_ACTION = "alternative_action"
+     PROCEED_ACTION = "proceed_action"
++    CONTENT_OBJECT = "content_object"
+ 
+ 
+ class RewardAddress(native.WireModel):
+diff --git a/src/sts2_harness_eval/execution_record.py b/src/sts2_harness_eval/execution_record.py
+index 0b229e7..95d3011 100644
+--- a/src/sts2_harness_eval/execution_record.py
++++ b/src/sts2_harness_eval/execution_record.py
+@@ -15,6 +15,7 @@ from sts2_harness_eval.cases import IncompleteCause, Mismatch, Stage, Unsupporte
+ from sts2_harness_eval.checkpoints import CheckpointCause
+ from sts2_harness_eval.sample import (
+     AfterDecisions,
++    BattleEnd,
+     Completed,
+     Incomplete,
+     OperatorStopped,
+@@ -161,6 +162,7 @@ type RefusalRecord = Annotated[
+ class EndpointKind(StrEnum):
+     DECISIONS = "after_decisions"
+     BATTLE = "battle_end"
++    RUN = "run_end"
+ 
+ 
+ class DecisionEndpoint(WireModel):
+@@ -173,12 +175,18 @@ class BattleEndpoint(WireModel):
+     node_id: str
+ 
+ 
++class RunEndpoint(WireModel):
++    kind: Literal[EndpointKind.RUN] = EndpointKind.RUN
++
++
+ class CompletedExecution(WireModel):
+     kind: Literal[ExecutionKind.COMPLETED] = ExecutionKind.COMPLETED
+     branch: Path
+     recording_id: str
+     anchor: ReachedRecord
+-    endpoint: Annotated[DecisionEndpoint | BattleEndpoint, Field(discriminator="kind")]
++    endpoint: Annotated[
++        DecisionEndpoint | BattleEndpoint | RunEndpoint, Field(discriminator="kind")
++    ]
+     decisions: int
+     requests: int
+ 
+@@ -256,13 +264,18 @@ def execution_record(value: TakeoverResult) -> ExecutionRecord:
+         case TakeoverCompleted(
+             branch, anchor, Completed(endpoint, decisions, requests), recording_id
+         ):
++            finished: DecisionEndpoint | BattleEndpoint | RunEndpoint
++            if isinstance(endpoint, AfterDecisions):
++                finished = DecisionEndpoint(count=endpoint.count)
++            elif isinstance(endpoint, BattleEnd):
++                finished = BattleEndpoint(node_id=endpoint.node_id)
++            else:
++                finished = RunEndpoint()
+             return CompletedExecution(
+                 branch=branch.resolve(),
+                 recording_id=recording_id,
+                 anchor=anchor_record(anchor),
+-                endpoint=DecisionEndpoint(count=endpoint.count)
+-                if isinstance(endpoint, AfterDecisions)
+-                else BattleEndpoint(node_id=endpoint.node_id),
++                endpoint=finished,
+                 decisions=decisions,
+                 requests=requests,
+             )
+diff --git a/src/sts2_harness_eval/sample.py b/src/sts2_harness_eval/sample.py
+index 3b35c3e..78caac2 100644
+--- a/src/sts2_harness_eval/sample.py
++++ b/src/sts2_harness_eval/sample.py
+@@ -69,7 +69,12 @@ class BattleEnd:
+     node_id: str
+ 
+ 
+-type Endpoint = AfterDecisions | BattleEnd
++@dataclass(frozen=True, slots=True)
++class RunEnd:
++    """End at the starting run's native victory or defeat."""
++
++
++type Endpoint = AfterDecisions | BattleEnd | RunEnd
+ 
+ 
+ class StopCause(StrEnum):
+@@ -135,6 +140,7 @@ class SampleHost:
+         self._core_paused = False
+         self._admitting = False
+         self._last: native.Observation | None = None
++        self._run: native.Location | None = None
+         self._battle: native.Location | None = None
+         self._recording_unavailable = False
+         self._terminal_candidate = False
+@@ -288,6 +294,10 @@ class SampleHost:
+     def arm(self, current: native.Observation | None = None) -> None:
+         if self._armed:
+             raise RuntimeError("A sample can only be armed once.")
++        if isinstance(self._endpoint, RunEnd):
++            if current is None or current.location.run_id is None:
++                raise ValueError("The run endpoint requires a starting run observation.")
++            self._run = current.location
+         self._armed = True
+         self._unit_model = False
+         self._unit_settle = False
+@@ -311,6 +321,16 @@ class SampleHost:
+     def _reached(self) -> bool:
+         if isinstance(self._endpoint, AfterDecisions):
+             return self._decisions >= self._endpoint.count
++        if isinstance(self._endpoint, RunEnd):
++            return (
++                self._run is not None
++                and self._last is not None
++                and self._last.location.game_instance_id == self._run.game_instance_id
++                and self._last.location.run_id == self._run.run_id
++                and isinstance(self._last.state, native.TerminalState)
++                and self._last.state.result
++                in {native.TerminalResult.VICTORY, native.TerminalResult.DEFEAT}
++            )
+         if self._terminal:
+             return True
+         if self._battle is None or self._last is None:
+diff --git a/src/sts2_harness_eval/takeover.py b/src/sts2_harness_eval/takeover.py
+index 685a0af..83dfd86 100644
+--- a/src/sts2_harness_eval/takeover.py
++++ b/src/sts2_harness_eval/takeover.py
+@@ -87,6 +87,7 @@ from sts2_harness_eval.cases import (
+     Case,
+     IncompleteCause,
+     Mismatch,
++    RunEndSpec,
+     Stage,
+     plan_admission,
+ )
+@@ -119,6 +120,7 @@ from sts2_harness_eval.sample import (
+     Endpoint,
+     Incomplete,
+     OperatorStopped,
++    RunEnd,
+     SampleBudget,
+     SampleHost,
+     SampleResult,
+@@ -445,6 +447,8 @@ class _Takeover:
+             endpoint: Endpoint
+             if isinstance(self.case.endpoint, AfterDecisionsSpec):
+                 endpoint = AfterDecisions(self.case.endpoint.count)
++            elif isinstance(self.case.endpoint, RunEndSpec):
++                endpoint = RunEnd()
+             else:
+                 assert location.node_id is not None
+                 endpoint = BattleEnd(location.node_id)
+@@ -551,6 +555,8 @@ class _Takeover:
+         self.recording_id = journal.manifest.recording_id
+         if isinstance(self.case.endpoint, AfterDecisionsSpec):
+             endpoint = AfterDecisions(self.case.endpoint.count)
++        elif isinstance(self.case.endpoint, RunEndSpec):
++            endpoint = RunEnd()
+         else:
+             node = plan.target.location.node_id
+             assert node is not None
+diff --git a/tests/test_sample.py b/tests/test_sample.py
+index ce950f3..1009e8b 100644
+--- a/tests/test_sample.py
++++ b/tests/test_sample.py
+@@ -31,6 +31,7 @@ from sts2_harness_eval.sample import (
+     Completed,
+     Endpoint,
+     Incomplete,
++    RunEnd,
+     SampleBudget,
+     SampleHost,
+     StopCause,
+@@ -133,6 +134,33 @@ def test_one_decision_keeps_settlement_and_feedback_before_stopping(tmp_path: Pa
+     asyncio.run(scenario())
+ 
+ 
++def test_run_end_keeps_playing_after_first_battle_until_native_victory(tmp_path: Path) -> None:
++    async def scenario() -> None:
++        campaign = Campaign()
++        async with sample(tmp_path / "run.sqlite", campaign, SampleBudget(30, 10), RunEnd()) as (
++            host,
++            journal,
++            session,
++        ):
++            host.arm(campaign.states[0])
++            result = await host.run(session)
++            assert isinstance(result, Completed) and result.endpoint == RunEnd()
++            states = [
++                observation.state
++                for record in journal.operations()
++                if record.reply is not None
++                for observation in record.reply.observations
++            ]
++            assert isinstance(states[-1], native.TerminalState)
++            assert states[-1].result is native.TerminalResult.VICTORY
++            assert any(
++                isinstance(state, native.CombatState) and state.progress.act == 2
++                for state in states
++            )
++
++    asyncio.run(scenario())
++
++
+ def test_request_limit_does_not_split_a_two_step_model_batch(tmp_path: Path) -> None:
+     async def scenario() -> None:
+         campaign = Campaign()

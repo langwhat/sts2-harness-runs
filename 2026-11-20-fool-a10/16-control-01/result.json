@@ -1,0 +1,14 @@
+{
+  "arm": "control",
+  "index": 16,
+  "seed": "LKDHCMWUWT2G",
+  "attempt": 1,
+  "started": "2026-11-20T17:03:03.545629+00:00",
+  "exit": 0,
+  "canonical_seed": "LKDHCMWUWT2G",
+  "native_result": "defeat",
+  "terminal_hp": 0,
+  "terminal_floor": 49,
+  "state": "terminal",
+  "ended": "2026-11-20T18:08:47.711627+00:00"
+}

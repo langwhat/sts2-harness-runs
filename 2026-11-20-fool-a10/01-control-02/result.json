@@ -1,0 +1,13 @@
+{
+  "arm": "control",
+  "index": 1,
+  "seed": "C0DXV1SEH0BM",
+  "attempt": 2,
+  "started": "2026-11-20T13:43:47.719437+00:00",
+  "exit": 0,
+  "native_result": "victory",
+  "terminal_hp": 36,
+  "terminal_floor": 49,
+  "state": "terminal",
+  "ended": "2026-11-20T15:14:56.721904+00:00"
+}

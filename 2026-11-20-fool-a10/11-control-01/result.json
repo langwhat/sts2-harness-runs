@@ -1,0 +1,11 @@
+{
+  "arm": "control",
+  "index": 11,
+  "seed": "PUQMC1CYQQNI",
+  "attempt": 1,
+  "started": "2026-11-20T15:37:31.650110+00:00",
+  "exit": 0,
+  "state": "error",
+  "error": "RuntimeError: Observed seed differs from the declared holdout.",
+  "ended": "2026-11-20T16:39:23.204733+00:00"
+}

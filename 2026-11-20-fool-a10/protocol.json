@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-11-20T13:42:01.423474+00:00",
+  "scope": "Fool Standard A10, v0.113.1, both bosses and natural terminal settlement",
+  "historical": {
+    "case": "Mac02 floor 44",
+    "repetitions": 4,
+    "reference": "take the second CARD.KI_WHIP",
+    "alternative": "take CARD.CHO_KI",
+    "same_40_card_start": true,
+    "screen": "At least three pairs improve lexicographic (victory, reaches second boss, second-boss entry HP or first-boss exit HP), with no fewer natural wins. Record ties. A locally improved card is a candidate, not an estimated full-run win rate."
+  },
+  "holdout": {
+    "seeds": [
+      "C0DXV1SEH0BM",
+      "T3ZX6GPYQ3CW",
+      "RRQZ7NFVF7FU",
+      "DW7EWVRDDPTP",
+      "LPHEHMCQTC36",
+      "Z7VVLHWKQZKJ",
+      "R4D4F3G1DCI8",
+      "RUBX2O60M76S",
+      "ZDR8ZQEFVVDG",
+      "EFASQDOT1IH5",
+      "PUQMC1CYQQNI",
+      "CTVG3HF5QTBR",
+      "DV7H9SP8CJDV",
+      "FZZLWLEZU1VB",
+      "1XSSMSMYHKEG",
+      "LKDHCMWUWT2G",
+      "OLMHJT09JU1C",
+      "QUVTKDOV1PCR",
+      "FIMQIZAK2F4G",
+      "D7KJBUGOVHR8"
+    ],
+    "arms": [
+      "unchanged",
+      "frozen candidate"
+    ],
+    "preparation": "Candidate materials and planned changes must be frozen before inspecting any held-out outcomes. Controls may run early. Never use this cohort to tune the candidate.",
+    "gate": "At least 12/20 natural victories in candidate and at least 2 more paired victories than unchanged. Report each result, Wilson 95% intervals and exact paired discordance test. This is a screening threshold, not proof of an underlying 60% rate."
+  },
+  "eligibility": "A native victory or defeat archived in the declared run. Record technical failures separately; retry only an interrupted arm on the same seed with unchanged materials. Preserve original artifacts and record any protocol amendment before unblinding.",
+  "known_inputs": {
+    "core": "f0486a95c4eb005b0d91386dd534d063c61df9ab",
+    "knowledge": "bdf5079aa6a71394f07d6a91a068302becb81e97",
+    "model": "gpt-6.2-astra",
+    "effort": "xhigh",
+    "protocol": "responses",
+    "context_window": 300000
+  }
+}

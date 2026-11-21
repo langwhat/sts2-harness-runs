@@ -1,0 +1,14 @@
+{
+  "arm": "control",
+  "index": 13,
+  "seed": "DV7H9SP8CJDV",
+  "attempt": 1,
+  "started": "2026-11-20T16:41:49.623299+00:00",
+  "exit": 0,
+  "canonical_seed": "DV7H9SP8CJDV",
+  "native_result": "victory",
+  "terminal_hp": 49,
+  "terminal_floor": 49,
+  "state": "terminal",
+  "ended": "2026-11-20T17:30:16.547726+00:00"
+}

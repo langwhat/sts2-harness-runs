@@ -1,0 +1,15 @@
+{
+  "arm": "control",
+  "index": 8,
+  "seed": "RUBX2O60M76S",
+  "attempt": 1,
+  "started": "2026-11-20T14:36:17.277576+00:00",
+  "exit": 0,
+  "state": "terminal",
+  "ended": "2026-11-20T15:50:37.784864+00:00",
+  "canonical_seed": "RUBX2060M76S",
+  "native_result": "victory",
+  "terminal_hp": 71,
+  "terminal_floor": 49,
+  "earlier_seed_check_error": "RuntimeError: Observed seed differs from the declared holdout."
+}

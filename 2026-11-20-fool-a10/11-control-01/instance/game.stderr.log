@@ -1,0 +1,54 @@
+ERROR: Parameter "t" is null.
+   at: texture_2d_initialize (servers/rendering/dummy/storage/texture_storage.h:84)
+ERROR: System.InvalidOperationException: Handle is not initialized.
+   at Godot.Bridge.ScriptManagerBridge.SwapGCHandleForType(IntPtr oldGCHandlePtr, IntPtr* outNewGCHandlePtr, godot_bool createWeak)
+   at: void Godot.NativeInterop.ExceptionUtils.LogException(System.Exception) (:0)
+   C# backtrace (most recent call first):
+       [0] void Godot.GD.PushError(string)
+       [1] void Godot.NativeInterop.ExceptionUtils.LogException(System.Exception)
+       [2] Godot.NativeInterop.godot_bool Godot.Bridge.ScriptManagerBridge.SwapGCHandleForType(nint, System.IntPtr*, Godot.NativeInterop.godot_bool)
+       [3] Godot.GodotObject Godot.NativeCalls.godot_icall_3_1180(nint, nint, string, string, int)
+       [4] MegaCrit.Sts2.Core.HoverTips.HoverTip MegaCrit.Sts2.Core.Models.PowerModel.GetDumbHoverTip(System.Nullable`1[System.Int32])
+       [5] System.Collections.Generic.IEnumerable`1[MegaCrit.Sts2.Core.HoverTips.IHoverTip] MegaCrit.Sts2.Core.Models.Cards.DeepStretch.get_ExtraHoverTips()
+       [6] System.Collections.Generic.IEnumerable`1[MegaCrit.Sts2.Core.HoverTips.IHoverTip] MegaCrit.Sts2.Core.Models.CardModel.get_HoverTips()
+       [7] void Sts2Mod.Observation.GameObserver.AddCard(MegaCrit.Sts2.Core.Models.CardModel, bool)
+       [8] void Sts2Mod.Observation.GameObserver.AddInventory(bool, bool)
+       [9] Sts2Mod.Core.Observation.NativeObservation Sts2Mod.Observation.GameObserver.CaptureRun(string, long, System.Collections.Immutable.ImmutableArray`1[System.String])
+       [10] void Sts2Mod.Observation.ObservationHub.PublishCurrentFrame()
+       [11] void Sts2Mod.Bootstrap.ModEntry.OnProcessFrame()
+       [12] void Godot.Callable.<From>g__Trampoline|1_0(object, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&)
+       [13] void Godot.DelegateUtils.InvokeWithVariantArgs(nint, System.Void*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant*)
+ERROR: System.InvalidOperationException: Handle is not initialized.
+   at Godot.Bridge.ScriptManagerBridge.SwapGCHandleForType(IntPtr oldGCHandlePtr, IntPtr* outNewGCHandlePtr, godot_bool createWeak)
+   at: void Godot.NativeInterop.ExceptionUtils.LogException(System.Exception) (:0)
+   C# backtrace (most recent call first):
+       [0] void Godot.GD.PushError(string)
+       [1] void Godot.NativeInterop.ExceptionUtils.LogException(System.Exception)
+       [2] Godot.NativeInterop.godot_bool Godot.Bridge.ScriptManagerBridge.SwapGCHandleForType(nint, System.IntPtr*, Godot.NativeInterop.godot_bool)
+       [3] Godot.GodotObject Godot.NativeCalls.godot_icall_3_1180(nint, nint, string, string, int)
+       [4] MegaCrit.Sts2.Core.HoverTips.HoverTip MegaCrit.Sts2.Core.Models.PowerModel.GetDumbHoverTip(System.Nullable`1[System.Int32])
+       [5] System.Collections.Generic.IEnumerable`1[MegaCrit.Sts2.Core.HoverTips.IHoverTip] MegaCrit.Sts2.Core.Models.Cards.DeepStretch.get_ExtraHoverTips()
+       [6] System.Collections.Generic.IEnumerable`1[MegaCrit.Sts2.Core.HoverTips.IHoverTip] MegaCrit.Sts2.Core.Models.CardModel.get_HoverTips()
+       [7] void Sts2Mod.Observation.GameObserver.AddCard(MegaCrit.Sts2.Core.Models.CardModel, bool)
+       [8] void Sts2Mod.Observation.GameObserver.AddInventory(bool, bool)
+       [9] Sts2Mod.Core.Observation.NativeObservation Sts2Mod.Observation.GameObserver.CaptureRun(string, long, System.Collections.Immutable.ImmutableArray`1[System.String])
+       [10] void Sts2Mod.Observation.ObservationHub.PublishCurrentFrame()
+       [11] void Sts2Mod.Bootstrap.ModEntry.OnProcessFrame()
+       [12] void Godot.Callable.<From>g__Trampoline|1_0(object, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&)
+       [13] void Godot.DelegateUtils.InvokeWithVariantArgs(nint, System.Void*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant*)
+ERROR: Parameter "t" is null.
+   at: texture_2d_initialize (servers/rendering/dummy/storage/texture_storage.h:84)
+WARNING: 692 RIDs of type "CanvasItem" were leaked.
+     at: _free_rids (servers/rendering/renderer_canvas_cull.cpp:2678)
+ERROR: 1 RID allocations of type 'N26RendererEnvironmentStorage11EnvironmentE' were leaked at exit.
+ERROR: 171 RID allocations of type 'PN13RendererDummy14TextureStorage12DummyTextureE' were leaked at exit.
+ERROR: 19 RID allocations of type 'N13RendererDummy9DummyMeshE' were leaked at exit.
+ERROR: 34 RID allocations of type 'N13RendererDummy15MaterialStorage13DummyMaterialE' were leaked at exit.
+ERROR: 6 RID allocations of type 'N13RendererDummy15MaterialStorage11DummyShaderE' were leaked at exit.
+ERROR: 310 RID allocations of type 'PN18TextServerAdvanced22ShapedTextDataAdvancedE' were leaked at exit.
+ERROR: 9 RID allocations of type 'PN18TextServerAdvanced12FontAdvancedE' were leaked at exit.
+ERROR: 3 RID allocations of type 'PN18TextServerAdvanced27FontAdvancedLinkedVariationE' were leaked at exit.
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+     at: cleanup (core/object/object.cpp:2514)
+ERROR: 221 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:795)
