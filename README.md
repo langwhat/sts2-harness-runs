@@ -12,6 +12,10 @@ Each run directory holds the core's SQLite archive, which records every game ope
 uv run sts2 journal --archive <run>/instance/archive.sqlite
 ```
 
+## Disclaimer
+
+This is an unofficial fan project, not affiliated with or endorsed by Mega Crit. Slay the Spire is a trademark of Mega Crit. The run records include saves, replays and logs that the game produced during these runs; this repository contains no game code or assets.
+
 ## License
 
 [MIT](LICENSE).
