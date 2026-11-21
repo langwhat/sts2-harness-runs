@@ -11,3 +11,7 @@ Each run directory holds the core's SQLite archive, which records every game ope
 ```sh
 uv run sts2 journal --archive <run>/instance/archive.sqlite
 ```
+
+## License
+
+[MIT](LICENSE).
