@@ -2,6 +2,9 @@
 
 **13 wins, 7 losses.** The full write-up, with setup, seed selection, and per-run results, is in [docs/results.md](https://github.com/langwhat/slay-the-spire-2-harness/blob/main/docs/results.md) in the harness repository.
 
+See [How the seeds were chosen](https://github.com/langwhat/slay-the-spire-2-harness/blob/main/docs/results.md#how-the-seeds-were-chosen)
+for the seed generator, the local timestamps, and the steps to spot-check a run in the game.
+
 ## Setup
 
 - **Game:** Slay the Spire 2 v0.113.1 (macOS), Standard mode, Fool, Ascension 10.
